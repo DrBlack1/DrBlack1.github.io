@@ -1,0 +1,19 @@
+.date-input {
+    font-size: 2.5rem;
+    font-weight: 100;
+    border-radius: 5px;
+    padding: 1rem;
+    border: solid 2px #42db42;
+}
+
+.date-input:focus {
+    outline: none;
+}
+
+.date-input:placeholder {
+    color: #c0b6b6;
+}
+
+.empty {
+    border: solid 2px #da8686;
+}
