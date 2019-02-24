@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Mali:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url("../images/dk4.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Mali', cursive;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.buttonoutline {
+    padding: 520px 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.position {
+    padding: 10px;
+    border: black solid 2px;
+    color: black;
+    background: rgb(190, 175, 147);
+    margin: 5px;
+    font-family: 'Mali', cursive;
+    text-align: center;
+}
+
+.a:hover, .s:hover, .d:hover, .f:hover, .g:hover, .h:hover, .j:hover, .k:hover, .l:hover {
+    background: black;
+    color: white;
+    border: white solid 2px;
+}
+
+
+
+
+
