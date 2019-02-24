@@ -1,0 +1,135 @@
+/* *{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: 5rem;
+    text-align: center;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.keys {
+    display: flex;
+}
+
+h3 {
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px 150px 20px 150px;
+    border: black solid 1px;
+}
+
+h2 {
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: lightgray;
+    padding: 20px;
+    border: black solid 1px;
+}
+
+.position {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#keyname {
+    border: solid black 2px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+}
+
+#codename {
+    border: solid black 2px;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 50px;
+} */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+   background-color: white;
+   font-family: "Montserrat: 400", sans-serif;
+}
+
+h1 {
+    font-family: "Montserrat: 400", sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 20px;
+    text-decoration: underline;
+    background-color: lightgray;
+    padding: 20px;
+    border: black solid 1px;
+}
+
+h3 {
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+
+.buttonbody {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 20px 150px 20px 150px;
+    border: black solid 1px;
+}
+
+.position {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#keyname {
+    border: solid black 2px; 
+    color: black;
+    text-align: center; 
+    font-size: 20px;
+    padding: 50px;
+}
+
+#keycode {
+    border: solid black 2px; 
+    color: black;
+    text-align: center; 
+    font-size: 20px;
+    padding: 50px;
+}
+
+#codename {
+    border: solid black 2px; 
+    color: black;
+    text-align: center; 
+    font-size: 20px;
+    padding: 50px;
+}
