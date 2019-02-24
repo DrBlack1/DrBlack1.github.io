@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,800');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Gilroy Light',Helvetica,Arial,Lucida,sans-serif;
+}
+
+.navbar {
+    background: #274E9B;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+}
+
+.logo {
+    height: 44.39px;
+    width: 123.98px;
+    position: absolute;
+    left: 2%;
+}
+
+.nav-links {
+    display: flex;
+    color: white;
+    margin-right: 3rem;
+}
+
+.link {
+    font-size: 1.5rem;
+    list-style: none;
+    margin: 0 .5rem;
+    padding: 1rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.btn-link {
+    font-size: 1.5rem;
+    list-style: none;
+    background: #F5B32F;
+    border-radius: 20px;
+    padding: 1rem 1.2rem;
+    margin: 0 .2rem;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.down {
+    height: 10px;
+    width: 10px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.about {
+    color: #2ea3f2;
+}
+
+.contact {
+    margin: 8rem auto;
+    width: 70%;
+    display: flex;
+}
+
+.contact-form {
+    flex: 4;
+    margin-right: 7rem;
+}
+
+.contact-title {
+    font-size: 4rem;
+    color: #274E9B;
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.info-title {
+    font-size: 2.2rem;
+    color: #274E9B;
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 3rem;
+}
+
+.input-tag {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.input {
+    margin: 1rem 0;
+    width: 93%;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    border: none;
+    border-bottom: solid 2px #274E9B;
+}
+
+.email {
+    margin-top: 2rem;
+}
+
+.phone {
+    margin-top: 2rem;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.phone-num {
+    color: #7b7575;
+    font-size: 1.8rem;
+    font-weight: 100;
+    margin-top: 1rem;
+}
+
+.address-container {
+    margin-top: 4rem;
+}
+
+.info-subtitle {
+    font-size: 1.8rem;
+    margin-top: .5rem;
+    color: #274E9B;
+}
+
+.address {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #7b7575;
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+.map-link {
+    color: #274e9b;
+    font-size: 1.8rem;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+.chester {
+    margin-top: 3rem;
+}
+
+.chester-info {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    color: #7b7575;
+    font-size: 1.8rem;
+    font-weight: 100;
+}
+
+.location {
+    margin-top: 1rem;
+}
+
+.courses {
+    margin-top: 1rem;
+}
+
+.location-title {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.city {
+    margin: 1rem 0;
+}
+
+.courses-title {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.location-city {
+    font-size: 1.8rem;
+    color: #7b7575;
+    font-weight: 100;
+    vertical-align: middle;
+    padding-left: .5rem;
+}
+
+.course-type {
+    font-size: 1.8rem;
+    color: #7b7575;
+    font-weight: 100;
+    vertical-align: middle;
+    padding-left: .5rem;
+}
+
+.course {
+    margin: 1rem 0;
+}
+
+input[type='checkbox'] {
+    font-size: 3rem;
+}
