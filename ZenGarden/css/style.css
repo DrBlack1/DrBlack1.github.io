@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+h2 {
+    background: url(../img/zen.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position-y: 15px;
+    display: block;
+    font-family: "Satisfy", sans-serif;
+    font-size: 17px;
+    padding: 20px 0px 20px 0px;
+    display: inline-block;
+    width: 400px;
+    margin: 0px 65px 0px 65px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    text-shadow: 2px 4px black;
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100px;
+    margin: 0px 65px 0px 65px;
+}
+
+header {
+    text-align: center;
+    background-image: url(../img/huntington.png);
+    background-size: 100%;
+    color: white;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    color: white;
+}
+
+p {
+    font-family: "IBM Plex Mono", sans-serif;
+    line-height: 3;
+    font-size: 0.75em;
+    margin: 0px 65px 0px 65px;
+    display: block;
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+    color: black;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+    margin: 0px 65px 0px 65px;
+}
+
+.participation, .benefits {
+    background: url(..img/bamboo.png);
+    background-size: 100%;
+    background-color: rgba(138,188,159,0.5);
+    color: white;
+    padding: 20px 0px 20px 0px;
+}
+
+.participation p {
+    padding: 0;
+}
+
+[role="contentinfo"] {
+    background-size: 100%;
+    background-color: rgba(138,188,159,0.5);
+    font-size: 15px;
+    color: grey;
+    margin: 0px;
+    text-align: center;
+}
+
+[role="contentinfo"] a {
+    font-family: "Satisfy", sans-serif;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+footer {
+    background: #134347;
+    text-align: center;
+    font-size: 30px;
+}
+
+footer i{
+    color: white;
+    font-size: 32px;
+    margin-left: 24px;
+}
+footer i:hover{
+    color: #BCD5C7;
+}
+
+footer a::before {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    text-indent: 0;
+    font-family: 'verdemoderna';
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands";
+    color: white;
+    padding: 15px 10px 20px 10px;
+}
+
+.wrapper, .next, .viewall {
+    background-color: #e5f2e1;
+    font-family: "Roboto:300";
+    margin: 0;
+}
+
+div {
+    display: block;
+}
+
+.sidebar h3 {
+    visibility: hidden;
+    margin: 0;
+    display: none;
+}
+
+nav ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+[role="navigation"] li {
+    box-sizing: border-box;
+    overflow: auto;
+    float: left;
+    width: 50%;
+    padding: 20px 0px;
+    text-align: center;
+    border-color: #cfd1cf;
+    border-bottom: solid 1px #cfd1cf;
+    position: relative;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.design-name {
+    color: black;
+}
+
+.designer-name, .design-archives a {
+    color: gray;
+}
+
+.design-archives li {
+    background-color: #e5f2e1;
+}
+
+.zen-resources ul {
+    column-count: 2;
+    text-align: center;
+    color: gray;
+    height: 200px;
+    background: url(../img/bamboo.png);
+    background-attachment: scroll;
+    background-color: #89a87e;
+    background-size: cover;
+    margin: 0;
+}
+
+.zen-resources li {
+    padding: 20px 20px;
+}
+
