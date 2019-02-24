@@ -1,0 +1,28 @@
+body {
+    background: lightblue;
+    text-align: center; /*move the content to centre*/
+}
+
+.wrapper {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.circle{
+    width: 100px;
+    padding: 50px 0;
+    line-height: 0;
+    margin: 60px auto;
+    background: palevioletred;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 1s, transform 0.3s, 1s linear;
+}
+/*ease-out, ease-in, ease*/
+
+.circle:hover{
+    background: #ddccd2;
+    color: grey;
+    transform: rotate(360deg);
+}
