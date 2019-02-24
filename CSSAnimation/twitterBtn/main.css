@@ -1,0 +1,30 @@
+.btn-position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-style {
+    width: 150px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #1dcaff;
+    color: white;
+    border-radius: 15px;
+}
+
+.btn-style:hover {
+    background-color: #83e2ff;
+}
+
+.btn-style:active {
+    background-color: #f1c40f;
+}
+
+.btn-style:visited {
+    background-color: #2ecc71;
+}
