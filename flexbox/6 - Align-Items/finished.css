@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates:900');
+
+* {
+    box-sizing: border-box;
+}
+.box {
+    color:white;
+    font-size: 100px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    padding:15px;
+  }
+  
+  .box1 { background:#eccc68; font-size: 30px;}
+  .box2 { background:#ff6348;}
+  .box3 { background:#ff7f50; font-size: 15px;}
+  .box4 { background:#ff4757; font-size: 200px;}
+  .box5 { background:#f1c40f; font-size: 10px;}
+  .box6 { background:#e67e22;}
+  .box7 { background:#2ed573;}
+  .box8 { background:#1e90ff;}
+  .box9 { background:#c56cf0;}
+  .box10 { background:#18dcff; font-size: 77px;}
+
+.container {
+    display: flex;
+    border: 10px solid gold;
+    /* height: 100vh;
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: baseline;
+    align-items: center;
+    padding: left; */
+}
