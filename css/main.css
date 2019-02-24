@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+}
+
+.wrapper {
+    padding: 20px 40px;
+}
+
+img {
+    width: 100%
+}
+
+body {
+    background-color: lightblue;
+    font-family: 'Oswald', sans-serif;
+    padding: 20px;
+    border: 50;
+    margin: 90%, 0;
+
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+@media(min-width: 921px){
+    body{
+        background-color: orange;
+    }
+    .friends > .friends-col{
+        width: 33.3333%;
+        float: left;
+    }
+
+}
