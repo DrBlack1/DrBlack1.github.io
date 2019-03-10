@@ -21,7 +21,7 @@ const Pet = (props) => {
 class App extends Component {
     state = {
         persons: [
-            {name: 'Luke', age: 22, pet: 'dog', petsName: 'bob'},
+            {name: 'Patto', age: 26, pet: 'dog', petsName: 'bob'},
             {name:'Tom', age:19, pet: 'cat', petsName: 'dave'},
             {name:'Joel', age:65, pet: 'rock', petsName: 'barry'}
         ],
