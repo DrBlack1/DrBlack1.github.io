@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', sans-serif;
+    font-size: 14px;
+}
+
+h2 {
+    background: url(../img/zen.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 30%;
+}
+
+header[role='banner'] {
+    background-image: url('../img/huntington.png');
+    color: white;
+    text-align: center;
+    padding: 70px;
+}
+
+header[role='banner'] h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 55px;
+    text-shadow: 3px 6px 1px rgba(0,0, 0, .7);
+    text-transform: uppercase;
+    margin: 0 0 35px 0;
+}
+
+header[role='banner'] h2 {
+    font-family: 'Satisfy', cursive;
+    color: #ffffffc0;
+    font-size: 25px;
+}
+
+.summary {
+    margin: 7px 48px 48px 48px;
+}
+
+.summary a {
+    text-decoration: none;
+    color: black;
+}
+
+.summary a:hover {
+    text-decoration: underline;
+}
+
+
+.preamble {
+    margin: 7px 48px 48px 48px;
+}
+
+.preamble p {
+    line-height: 25px;
+}
+
+.explanation {
+    margin: 7px 48px 48px 48px;
+}
+
+.explanation p {
+    line-height: 25px;
+}
+
+.participation {
+    padding: 7px 0 0 48px;
+    color: white;
+    background: url('../img/bamboo.png');
+    background-color: #77957c;
+}
+
+
+.participation p {
+    margin: 0;
+    line-height: 20px;
+}
+
+.participation h3, .participation a {
+    color: black;
+    text-decoration: none;
+    margin: 0;
+}
+
+.benefits {
+    padding: 7px 48px 24px 48px;
+    color: white;
+    background: url('../img/bamboo.png');
+    background-color: #77957c;
+}
+
+.benefits h3 {
+    color: black;
+    margin: 7px 0 0 0;
+}
+
+.benefits p {
+    margin: 0;
+    line-height: 20px;
+}
+
+.requirements h3, .requirements p {
+    margin-left: 48px;
+}
+
+.requirements a {
+    text-decoration: none;
+    color: black;
+}
+
+.requirements p {
+    line-height: 25px;
+}
+
+[role='contentinfo'] {
+    margin-bottom: 0;
+    margin-top: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #a9b1a9;
+    font-size: 17px;
+    background-color: #7b9a80;
+    padding: 24px;
+    text-align: center;
+}
+
+p[role='contentinfo'] {
+    margin-left: 0;
+}
+
+
+[role='contentinfo'] a {
+    font-family: 'Satisfy', sans-serif;
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+}
+
+[role='contentinfo'] a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color:#30514f;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer i {
+    color: white;
+    font-size: 32px;
+    margin-left: 24px;
+}
+
+footer i:hover {
+    color: #c4c0c0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+h3.select {
+    display: none;
+}
+
+h3.archives {
+    display: none;
+}
+
+h3.resources {
+    display: none;
+}
+
+
+.sidebar ul{
+    list-style: none;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+.design-selection {
+    overflow: hidden;
+    background-color: #d8e0d8;
+}
+
+[role='navigation'] ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;  
+}
+
+[role='navigation'] li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: solid 2px #00000020;
+}
+
+[role='navigation'] li .designer-name {
+    color: #00000081;
+}
+
+.design-archives {
+   background-color: #d8e0d8;
+   overflow: hidden;
+}
+
+.design-archives nav ul a {
+    color: #00000081;
+}
+
+.zen-resources {
+    overflow: hidden;
+    background: url('../img/bamboo.png');
+    background-color: #79947a;
+    padding: 2rem 0;
+}
+
+.zen-resources ul{
+    margin: 0;
+    padding: 0;
+}
+
+.zen-resources li {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.zen-resources li a {
+    color: #00000081;
+}
