@@ -1,0 +1,29 @@
+.display {
+    background: #383636;
+    width: 28rem;
+    padding: 1rem;
+    height: 8rem;
+    outline: solid 1px black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    word-break: break-all;
+    overflow-y: auto;
+}
+
+.value {
+    font-size: 3.5rem;
+    color: white;
+    text-align: right;
+    text-shadow: 0 0 10px #fff;
+    height: 100%;
+}
+
+.display::-webkit-scrollbar{
+    width: .7rem;  
+}
+
+.display::-webkit-scrollbar-thumb {
+    background: #cea1a1;
+    border-radius: 5px;
+}
