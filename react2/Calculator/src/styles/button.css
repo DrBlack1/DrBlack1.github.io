@@ -11,7 +11,8 @@
 
 .number {
     font-weight: 100;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 100;
 }
 
 .button:active {
@@ -21,6 +22,7 @@
 .isOperator {
     background: #cea1a1;
     color: white;
+    width: 7rem;
 }
 
 .isOperator:active {

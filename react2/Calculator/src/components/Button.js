@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/button.css';
 
-
 const isOperator = (num) => {
     return !isNaN(num) || num === '.' || num === '=';
 }
