@@ -14,11 +14,6 @@ let player = {
         } else if (this.x >= (innerWidth - this.width)) {
             this.x = (innerWidth - this.width)
         }
-        if (this.y <= 0) {
-            this.y = 0;
-        } else if (this.y >= (innerHeight - this.height)) {
-            this.y = (innerHeight - this.height)
-        }
         c.drawImage(player_img, this.x, this.y, this.width, this.height)
     }
 }
@@ -29,9 +24,9 @@ let score = 0;
 let isAlienUp = true;
 let alienAnimationTimeoutX = 10;
 let alienAnimationTimeoutY = 50;
-let alienMoveX = 10;
-let alienMoveY = 10;
-
+let alienMoveX = 2;
+let alienMoveY = 2;
+let alienLeft = true;
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -42,16 +37,17 @@ function getAlienYPosition(rowIndex) {
 }
 
 addEventListener('keydown', function (event) {
-    if (event.key == "ArrowLeft") {
+    if (event.code == "ArrowLeft") {
         player.x -= 30;
-    } else if (event.key == "ArrowRight") {
+    } else if (event.code == "ArrowRight") {
         player.x += 30;
+    } else if (event.code == "Space") {
+        createMissle();
     }
 })
 
-
 function createMissle() {
-    for (i = 0; i < 2; i++) {
+    for (i = 0; i < 1; i++) {
         missle_img = new Image();
         missle_img.src = './missle.png'
         missle = {
@@ -65,14 +61,7 @@ function createMissle() {
         };
         missles.push(missle);
     }
-
-    addEventListener('keydown', function (event) {
-        if (event.key == "Space") {
-        missle.y -= 500;
-    }
-    })
 }
-
 
 for (rowIndex = 0; rowIndex < 3; rowIndex++) {
     createEnemy(rowIndex)
@@ -86,11 +75,6 @@ function createEnemy(rowIndex) {
             x: getAlienXPosition(columnIndex),
             y: getAlienYPosition(rowIndex),
             draw() {
-                if (this.x <= 0) {
-                    this.x = 0;
-                } else if (this.x >= (innerWidth - this.width)) {
-                    this.x = (innerWidth - this.width)
-                }
                 c.drawImage(GetAlienImage(), this.x, this.y, this.width, this.height)
             }
         };
@@ -108,37 +92,43 @@ function GetAlienImage() {
     return enemy_img
 }
 
-function animationTimeoutY() {
-    if (alienAnimationTimeoutY >= 0) {
-        alienAnimationTimeoutY--
-    } else {
-        alienAnimationTimeoutY = 500;
-        moveAlienY();
-    }
-}
-
 function animationTimeoutX() {
     if (alienAnimationTimeoutX >= 0) {
         alienAnimationTimeoutX--
     } else {
-        alienAnimationTimeoutX = 50;
+        alienAnimationTimeoutX = 10;
         isAlienUp = !isAlienUp;
-        moveAlienX();
     }
 }
 
 function moveAlienY() {
-    alienMoveY = (alienMoveY + 1);
     enemies.forEach(enemy => {
         enemy.y = enemy.y + alienMoveY
     })
 }
 
-function moveAlienX() {
-    alienMoveX = (alienMoveX + 1);
+function moveAlienRight() {
     enemies.forEach(enemy => {
         enemy.x = enemy.x + alienMoveX
     })
+}
+
+function moveAlienLeft() {
+    enemies.forEach(enemy => {
+        enemy.x = enemy.x - alienMoveX
+    })
+}
+
+function missleFire() {
+    missles.forEach(missle => {
+        missle.y = missle.y - 5
+    })
+}
+
+function removeMissle() {
+    if (missle.y <= 200) {
+        missles.shift();
+    }
 }
 
 function getAlienXPosition(columnIndex) {
@@ -152,17 +142,7 @@ function getPercentageOfScreen(number) {
     return (canvas.width / 100 * number);
 }
 
-createMissle();
-moveAlienY();
-
-
-function animate() {
-    c.clearRect(0, 0, canvas.width, canvas.height);
-    requestAnimationFrame(animate);
-    animationTimeoutX();
-    animationTimeoutY();
-
-    //console.log("tick", (new Date().getSeconds()))
+function doDraw() {
     c.font = '18px arial';
     c.fillStyle = '#fff';
     c.fillText('SCORE: ' + score, 650, 20);
@@ -174,4 +154,19 @@ function animate() {
         enemy.draw();
     });
 }
-animate();
+
+function doAnimation() {
+    missleFire()
+    removeMissle()
+    moveAlienY()
+    animationTimeoutX()
+}
+
+function runAnimationFrames() {
+    c.clearRect(0, 0, canvas.width, canvas.height);
+    requestAnimationFrame(runAnimationFrames);
+    doAnimation();
+    doDraw();
+}
+
+runAnimationFrames();
