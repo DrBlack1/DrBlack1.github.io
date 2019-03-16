@@ -1,6 +1,5 @@
 let canvas = document.querySelector('canvas');
 let c = canvas.getContext('2d');
-let pageLoaded = false;
 let player_img = new Image();
 player_img.src = './ship.svg'
 let player = {
@@ -24,9 +23,9 @@ let score = 0;
 let isAlienUp = true;
 let alienAnimationTimeoutX = 10;
 let alienAnimationTimeoutY = 50;
-let alienMoveX = 2;
-let alienMoveY = 2;
-let alienLeft = true;
+let alienMoveX = 5;
+let alienMoveY = 10;
+
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -46,6 +45,7 @@ addEventListener('keydown', function (event) {
     }
 })
 
+
 function createMissle() {
     for (i = 0; i < 1; i++) {
         missle_img = new Image();
@@ -62,6 +62,7 @@ function createMissle() {
         missles.push(missle);
     }
 }
+
 
 for (rowIndex = 0; rowIndex < 3; rowIndex++) {
     createEnemy(rowIndex)
@@ -113,9 +114,19 @@ function moveAlienRight() {
     })
 }
 
-function moveAlienLeft() {
+function reverseAlienDirection() {
     enemies.forEach(enemy => {
-        enemy.x = enemy.x - alienMoveX
+        if (enemy.x + enemy.width > canvas.width || enemy.x < 0) {
+            alienMoveX = -alienMoveX
+        }
+    })
+}
+
+function alienDirectionY() {
+    enemies.forEach(enemy => {
+        if (enemy.x + enemy.width > canvas.width || enemy.x < 0) {
+            moveAlienY()
+        }
     })
 }
 
@@ -126,9 +137,11 @@ function missleFire() {
 }
 
 function removeMissle() {
+    missles.forEach(missle => {
     if (missle.y <= 200) {
         missles.shift();
     }
+})
 }
 
 function getAlienXPosition(columnIndex) {
@@ -158,9 +171,12 @@ function doDraw() {
 function doAnimation() {
     missleFire()
     removeMissle()
-    moveAlienY()
     animationTimeoutX()
+    moveAlienRight()
+    reverseAlienDirection()
+    alienDirectionY()
 }
+
 
 function runAnimationFrames() {
     c.clearRect(0, 0, canvas.width, canvas.height);
@@ -168,5 +184,6 @@ function runAnimationFrames() {
     doAnimation();
     doDraw();
 }
+
 
 runAnimationFrames();
