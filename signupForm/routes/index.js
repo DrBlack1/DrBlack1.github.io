@@ -1,29 +1,39 @@
 var express = require('express');
 var router = express.Router();
-const User = require('../modals/user')
+const User = require('../models/user');
+
+const bcrypt = require('bcrypt');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Hello' });
+  res.render('index', { title: 'Hello', subtitle: 'subtitle', });
 });
 
-router.post('/', function(req, res, next){
+router.post('/', async function(req, res, next) {
   let name = req.body.name;
   let email = req.body.email;
   let password = req.body.password;
 
+  let salt = await bcrypt.genSalt(13);
+  let hash = await bcrypt.hash(password, salt);
+  
   const user = new User({
-    name: name,
-    email: email,
-    password: password
+    name,
+    email,
+    password: hash
   });
 
-  user.save();
+  let searchedUser = await User.find({name: name});
+  console.log(searchedUser);
 
+  if(searchedUser.length === 0) {
+    user.save();
+  } else {
+      console.log('error, user already exists');
+  }
+    // user.save();
 
-  // console.log(req.body)
-  // res.render('index', { title: req.body.text });
-})
+});
 
 
 module.exports = router;
