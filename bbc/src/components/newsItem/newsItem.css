@@ -1,0 +1,20 @@
+.newsItem {
+    /* border: blue 2px solid; */
+    display: flex;
+    margin: 20px;   
+    height: 10%; 
+    background: white;
+}
+
+.img {
+    position: relative;
+    height: 100%;
+}
+
+.category {
+    align-items: flex-end;
+}
+
+.NewsItemText{
+    /* border: red 10px solid; */
+}

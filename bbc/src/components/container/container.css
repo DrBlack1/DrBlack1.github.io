@@ -1,0 +1,9 @@
+.container {
+    /* border: red 2px solid; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 70vh;
+    padding: 20px;
+}
