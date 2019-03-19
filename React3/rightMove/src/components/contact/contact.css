@@ -1,0 +1,8 @@
+.contact {
+    border: solid red 2px;
+    position: relative;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+}

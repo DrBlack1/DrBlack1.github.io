@@ -1,0 +1,6 @@
+.price {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    align-content: flex-end;
+}
