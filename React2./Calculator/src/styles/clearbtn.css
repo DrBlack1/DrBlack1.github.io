@@ -1,0 +1,22 @@
+
+    
+.clear-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21rem;
+    height: 7rem;
+    background: #cea1a1;
+    outline: solid 1px black;
+    cursor: pointer;
+}
+
+.clear-val {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.clear-btn:active {
+    background: #ad8989;
+}
