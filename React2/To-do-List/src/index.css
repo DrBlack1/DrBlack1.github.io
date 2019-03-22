@@ -1,0 +1,12 @@
+body {
+    padding: 50px;
+    background-color: lightblue;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    justify-content: flex;
+}

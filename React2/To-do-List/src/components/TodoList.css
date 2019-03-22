@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+/* body {
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0px;
+    right: 0px;
+} */
+
+.todoListMain .header input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #FFF;
+    width: 313px;;
+
+}
+
+.todoListMain .header button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+    margin-right: 0px;
+    background-color: #0066FF;
+    color: #FFF;
+    border: 2px solid #0066FF;
+}
+
+.todoListMain .header button:hover {
+    background-color: #003399;
+    border: 2px solid #003399;
+    cursor: pointer;
+}
+
+.todoListMain .theList li {
+    color: #333;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 15px;
+    border-radius: 5px;
+    list-style: none;
+    margin-bottom: 10px;
+    transition: background-color .2s ease-out;
+    
+}
+
+.todoListMain .theList li:hover {
+    background-color: #d85248;
+    cursor: pointer;
+
+}
+
+ul {
+    padding: 0px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    fill: red;
+    left: 273px;
+    display: none;
+}
+
+/* .todoListMain .theList li svg:hover {
+    display: block;
+    position: absolute;
+} */
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-family: 'Raleway' , sans-serif;
+    font-size: 30px;
+}
+
