@@ -17,17 +17,57 @@ const tiltClockHandsBySeconds = () => {
 setInterval(tiltClockHandsBySeconds, 1000);
 
 
-let digitalTime = document.getElementById('digital');
-
-function digital() {
-  const time = new Date();
-  const seconds = time.getSeconds();
-  const mins = time.getMinutes();
-  const hour = time.getHours() % 24;
-  const ampm = hour >= 24 ? 'AM' : 'PM';
-  digitalTime.textContent = `${hour}:${mins}:${seconds} ${ampm}`;
-
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  var time = document.getElementById('time');
+  m = checkTime(m);
+  s = checkTime(s);
+  time.innerHTML = h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
 }
 
-digital();
-setInterval(digital, 1000);
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+
+startTime();
+
+function runClock(){
+  var hourHand = document.getElementById("hours");
+  var minuteHand = document.getElementById("minutes");
+  var secondHand = document.getElementById("seconds");
+  var today = new Date();
+  var hour = today.getHours() % 12;
+  var minute = today.getMinutes();
+  var second = today.getSeconds();
+  
+  var hourRotation = (30 * hour) + minute * 0.5;
+  var minuteRotation = 6 * minute;
+  var secondRotation = 6 * second;
+
+  if (secondRotation == 0) {
+      secondHand.transition = 'none';
+      secondHand.transform = "rotate(0deg)";
+  } else {
+      secondHand.transform = "rotate(" + secondRotation + "deg)";
+      secondHand.transition = "transform 0.25s cubic-bezier(.4,2.08,.55,.44)";
+  }   
+
+  if (minuteRotation == 0) {
+      minuteHand.transition = 'none';
+      minuteHand.transform = "rotate(0deg)";
+  } else {
+      minuteHand.transform = "rotate(" + minuteRotation + "deg)";
+      minuteHand.transition = "transform 0.3s cubic-bezier(.4,2.08,.55,.44)";
+  }
+  
+  hourHand.transform = "rotate(" + hourRotation + "deg)";
+
+  requestAnimationFrame(runClock);
+}
+
+runClock();
