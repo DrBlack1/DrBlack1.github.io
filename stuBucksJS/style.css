@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,700");
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab", serif;
+}
+
+header {
+  display: flex;
+  text-align: center;
+  background-color: rgb(42, 42, 46);
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0 200px;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 20px;
+  height: 80px;
+}
+
+.offerBar {
+  display: flex;
+  flex-direction: row;
+  font-size: 10px;
+}
+
+.shipping {
+  width: 80%;
+  text-align: center;
+}
+
+.nearestStore {
+  right: 0;
+  background: #067655;
+  color: white;
+  width: 20%;
+  text-align: center;
+}
+
+.offer {
+  margin: 2px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.section_1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url(./Images/StubucksHero.jpg);
+  background-size: cover;
+}
+.section_2 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(18, 18, 31);
+  margin: 0;
+  padding: 0;
+}
+
+.section_two_heading {
+  font-weight: 700;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 36px;
+  margin: 0;
+}
+
+.new-tag {
+  color: #067655;
+}
+
+.section_2_info {
+  position: absolute;
+  top: 1100px;
+  width: 45%;
+  color: white;
+  margin-left: 50%;
+  font-size: 36px;
+  text-align: right;
+}
+
+.section_2_heading {
+  font-size: 72px;
+  font-weight: 500;
+}
+
+.stuBrew-tag,
+.nitroBrew-tag {
+  color: #067655;
+}
+
+.iceCoffee {
+  position: absolute;
+  left: 120px;
+  top: 1050px;
+  height: 630px;
+  width: 480px;
+}
+
+/* START OF SHOP COFFEE, TEA & EQUIPMENT SECTION */
+
+.section_3 {
+  margin: 0px 130px 0px 130px;
+}
+
+.arrowDown img {
+  position: absolute;
+  left: 690px;
+  height: 60px;
+  width: 60px;
+  margin-top: 20px;
+}
+
+.stuShopBanner {
+  height: 100px;
+  background-color: #2b706f;
+  font-size: 36px;
+}
+
+.stuShopBannerTextA {
+  position: relative;
+  top: 25%;
+  margin: 0px;
+  text-align: center;
+  color: white;
+}
+
+.stuShopBannerTextB {
+  color: black;
+}
+
+.colStuShop h4 {
+  font-size: 36px;
+  margin: 25px;
+}
+
+.colStuShop p {
+  font-size: 18px;
+  margin: 25px;
+  font-family: "Roboto Slab: 300", serif;
+}
+
+.shopContainer {
+  width: 100%;
+  padding: 200px, 0px, 200px, 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.buyCoffee,
+.buyTea,
+.buyEquipment {
+  width: 320px;
+  height: 320px;
+  border-radius: 200px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  padding: 100px 0px 100px 0px;
+}
+
+hr {
+  border-top: 1px solid black;
+  margin: 0px 150px 0px 150px;
+}
+
+/* END OF SHOP COFFEE, TEA & EQUIPMENT SECTION */
+
+.section_4 {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 611px;
+  width: 100%;
+  background-color: #e7e7e7;
+  line-height: 35px;
+}
+
+.logo {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 20px;
+  left: 48px;
+  padding-left: 20px;
+  overflow: auto;
+}
+
+.text_box_1 {
+  display: absolute;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.logo {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  top: 20px;
+  left: 48px;
+  padding-left: 20px;
+  overflow: auto;
+}
+
+.text_box_1 {
+  display: absolute;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.landing_page {
+  position: absolute;
+  height: 89px;
+  left: 120px;
+  top: 320px;
+  font-size: 92px;
+}
+.landing_info {
+  position: absolute;
+  width: 612px;
+  height: 40px;
+  font-size: 25px;
+  left: 120px;
+  top: 490px;
+}
+.love {
+  color: rgb(73, 145, 73);
+}
+
+.choose_coffee {
+  position: absolute;
+  width: 225px;
+  height: 50px;
+  left: 120px;
+  top: 580px;
+  border-radius: 20px 0;
+  background-color: rgb(18, 18, 31);
+  color: white;
+  font-size: 20px;
+}
+.help,
+.company_info,
+.about_us {
+  width: 40%;
+}
+
+#help,
+#about_us,
+#company_info,
+#share {
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+li {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.share_icons {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+}
+
+.fb {
+  background-image: url(./Icons/icon-facebook.png);
+  background-size: 100%;
+  height: 32px;
+  width: 32px;
+}
+
+.insta {
+  background-image: url(./Icons/icon-instagram.png);
+  background-size: 100%;
+  height: 32px;
+  width: 32px;
+}
+
+.linked {
+  background-image: url(./Icons/icon-linkedin.png);
+  background-size: 100%;
+  height: 32px;
+  width: 32px;
+}
+
+.twitter {
+  background-image: url(./Icons/icon-twitter.png);
+  background-size: 100%;
+  height: 32px;
+  width: 32px;
+}
+
+.pin {
+  background-image: url(./Icons/icon-pinterest.png);
+  background-size: 100%;
+  height: 32px;
+  width: 32px;
+}
+
+.customer_service {
+  display: flex;
+  width: 50%;
+  flex-wrap: wrap;
+  padding-left: 245px;
+}
+
+
+
+._icons{
+  padding: 0
+}
+.footer {
+  background: #0e141d;
+  color: #ffffff;
+  font-size: 16px;
+  margin: 0px;
+  height: 125px;
+  display: flex;
+  padding: 30px 0px 0px 0px;
+
+}
+
+.footerLeft {
+  display: flex;
+  margin-left: 100px;
+}
+
+.footerRight {
+  display: flex;
+  margin-left: 100px;
+  text-align: right;
+}
+
+
+.white_down_arrow {
+  width: 61px;
+  height: 46px;
+  padding-top: 29px;
+}
+
+.white_arrow_container {
+  display: flex;
+  justify-content: center;
+}
