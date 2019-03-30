@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bank</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+</html>
+
+<body>
+
+<header>
+    <div class='title-container'>
+        <h1 class='title'>Bank Account</h1>
+        <div class='info'>
+            <div class='inputs'>
+                <label>PIN</label><input type='password' class='pin-input' maxlength='4'>
+                <label>Amount</label> <input type='text' class='amount-input' min='0'>
+                <button class='submit'>Enter</button>
+        </div>
+            <div class='details'>
+                <h2 class='details-text'></h2>
+                <h2 class='withdraw'><span class='display-withdrawal'></span></h2>
+                <h2 class='balance'><span class='display-balance'></span></h2>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<script src='bank.js'></script>
+</body>
+</html>
