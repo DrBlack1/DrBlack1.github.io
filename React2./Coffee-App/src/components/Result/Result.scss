@@ -1,0 +1,53 @@
+$resultsBgColor: #f0eaea;
+
+@mixin grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-title {
+    font-size: 4rem;
+    align-self: center;
+    font-weight: 400;
+}
+
+.order-details {
+    @include flexCenter();
+    background: $resultsBgColor;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    border-radius: 5px;
+
+    .order-detail {
+        font-size: 3rem;
+        width: 100%;
+        padding: 3rem 0;
+        color: black;
+        border-bottom: solid 1px black;
+        text-transform: uppercase;
+        text-align: center;
+        @include grid();
+    }
+
+    .detail {
+        background: #5c5cdd;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .label {
+        text-transform: lowercase;
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+}

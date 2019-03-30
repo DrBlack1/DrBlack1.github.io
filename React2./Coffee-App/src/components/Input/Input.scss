@@ -1,0 +1,33 @@
+$placeholderColor: #ffffffa9;
+$inputColor: white;
+
+@mixin inputStyles {
+    background: transparent;
+    border: none;
+    border-bottom: solid 2px white;
+}
+
+@mixin inputMeasurements {
+    padding: .4rem;
+    width: 500px;
+}
+
+.input-box {
+    @include inputStyles();
+    @include inputMeasurements();
+
+    margin-top: 2rem;
+    font-size: 1.7rem;
+    color: $inputColor;
+}
+
+.input-box::placeholder {
+    color: $placeholderColor;
+}
+.input-box:focus {
+    outline: none;
+}
+
+button {
+    display: none;
+}

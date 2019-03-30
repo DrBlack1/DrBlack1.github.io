@@ -1,0 +1,40 @@
+$primaryColor: white;
+$btnTextColor: #5c5cdd;
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    height: 30vh;
+    @include flexCenter();
+}
+
+.sugars-title {
+    color: $primaryColor;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.complete {
+    text-align: center;
+    border: solid 2px $primaryColor;
+    background: $primaryColor;
+    border-radius: 5px;
+    color: $btnTextColor;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.complete:hover {
+    background: transparent;
+    color: $primaryColor;
+}
+
+.complete:active {
+    transform: scale(0.97);
+}

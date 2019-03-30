@@ -1,0 +1,36 @@
+$sugarsColor: white;
+$btnTextColor: #5c5cdd;
+
+@mixin deltaBtn {
+    font-size: 3rem;
+    background: $sugarsColor;
+    border-radius: 5px;
+    padding: 2rem;
+    color: $btnTextColor;
+    cursor: pointer;
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sugar-counter {
+    @include flexCenter();
+}
+
+.inc {
+    @include deltaBtn();
+}
+
+.dec {
+    @include deltaBtn();
+}
+
+.total-sugars {
+    font-size: 5rem;
+    color: $sugarsColor;
+    width: 100px;
+    text-align: center;
+}

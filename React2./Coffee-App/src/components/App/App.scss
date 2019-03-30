@@ -1,0 +1,34 @@
+$backgroundColor: #5c5cdd;
+$appFontColor: white;
+
+@mixin appStyles {
+    border-radius: 5px;
+    border: solid 2px rgb(63, 74, 87);
+    box-shadow: 5px 5px 5px #978a8a;
+}
+
+@mixin appMeasurements {
+    width: 600px;
+    height: 90vh;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.app {
+    @include appStyles();
+    @include appMeasurements();
+    @include center();
+
+    margin-top: 2rem;
+    padding: 2rem;
+    background: $backgroundColor;
+    position: relative;
+
+    .logo {
+        width: 80%;
+    }
+}

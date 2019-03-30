@@ -1,0 +1,83 @@
+@mixin span {
+    position: relative;
+    cursor: pointer;
+
+    span {
+        position: absolute;
+        font-size: 1.4rem;
+        color: white;
+        top: 105%;
+        left: 45%;
+        transform: translate(-50%, -50%)
+    }
+}
+
+@mixin animation($seconds) {
+    animation: appear $seconds;
+}
+
+.order {
+    height: 100vh;
+    width: 100%;
+}
+
+.coffee-images {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 10px;
+}
+
+img {
+    width: 100%;
+    transition: .2s;
+}
+
+
+.coffee {
+    width: 65%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    animation: appear 4s;
+}
+
+.coffee:hover {
+    transform: translateY(-4px);
+}
+
+.latte:hover {
+    transform: translateY(-4px);
+}
+
+.cap:hover {
+    transform: translateY(-4px);
+}
+
+.frap:hover {
+    transform: translateY(-4px);
+}
+
+@keyframes appear {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.latte-container { 
+    @include span();
+    @include animation(1s);
+}
+
+.cap-container {
+    @include span();
+    @include animation(1.5s);
+}
+
+.frap-container {
+    @include span();
+    @include animation(2s);
+}
+
+.iced-coffee-container {
+    @include span();
+    @include animation(2.5s);
+}

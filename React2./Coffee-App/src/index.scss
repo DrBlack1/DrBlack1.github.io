@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700');
+
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    @include reset;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
