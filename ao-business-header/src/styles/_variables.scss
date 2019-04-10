@@ -1,0 +1,15 @@
+//Variables
+$aoGreen: #7fba23;
+
+@mixin ao-symbol($font-size, $symbol) {
+    font-size: $font-size;
+            &:before{
+                font-family: 'AO-font';
+                content: $symbol;
+            }
+}
+
+@font-face {
+    font-family: 'AO-font';
+    src: url('../ao-icons.woff2') format('woff2');
+}

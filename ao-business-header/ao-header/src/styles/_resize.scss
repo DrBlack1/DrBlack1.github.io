@@ -1,0 +1,102 @@
+// for a base of 768px
+
+.ao-header{
+        
+    height: 54px;
+
+    &__burger{
+        display: none;
+    }
+
+    &__logo {
+        display: flex;
+        order: 1;
+        @include ao-symbol(2.3125rem, "\e935" );
+        margin-left: 10vh;
+    }
+
+    &__phone {
+        display: flex;
+        order: 2;
+        align-items: center;
+        font-size: 1.125rem;
+        
+        .phone-number{
+            display: initial;
+            font-size: .5625rem;
+            display: flex;
+        }
+    }
+
+    &__search{
+        display: none; 
+    }
+    .form-container{
+        display: flex;
+        order: 3;
+        align-items: center;
+        position: relative;
+        flex-basis: 230px;
+
+        .input-box{
+            border-radius: 3px;
+            border: none;
+            display: initial;
+            height: 27px;
+            width: 100%; 
+            
+            &::placeholder{
+                font-size: 10px;
+            }
+        }
+        .search-icon{
+            position: absolute;
+            @include ao-symbol(1rem, "\4c");
+            color: $aoGreen;
+            right: 6px;
+            z-index: 999;
+        }
+    }
+
+    &__account{
+        display: flex;
+        order: 4;
+        @include ao-symbol(0.9375rem, "\e66a");
+        align-items: center;
+
+        &__text-container{
+            display: flex;
+            flex-direction: column;
+            margin-left: 7px;
+
+            .business-account-text{
+                font-size: 0.575rem;
+                text-transform: uppercase;
+            }
+
+            .sign-in-text{
+                font-size: 0.5875rem;
+                padding-top: 2px;
+            }
+        }
+    }
+
+    &__basket{
+        display: flex;
+        order: 5;
+        margin-right: 10vh;
+        font-size: 1.125rem;
+        align-items: center;
+
+        .basket-text{
+            font-size: 0.5625rem;
+            text-transform: uppercase;
+            margin: 0 3px 0 6px; 
+            display: initial;
+        }
+
+        .basket-right-arrow{
+            @include ao-symbol(0.5rem, "\2c3");
+        }
+    }
+}
