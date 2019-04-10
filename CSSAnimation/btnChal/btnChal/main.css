@@ -1,0 +1,397 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    height: 100vh;
+    background-image: linear-gradient(to right top, #4777bf, #007db2, #007e9d, #007d84, #37796e);
+}
+
+.fish {
+    z-index: 5;
+    width: 100px;
+    height: 75px;
+    position: absolute;
+    left: 120%;
+    top: 40%;
+    animation: fish-swim 9.8s linear 1s both infinite;
+}
+
+.shark {
+    z-index: 6;
+    position: absolute;
+    left: 120%;
+    top: 40%;
+    animation: shark-swim 10s linear 1.5s both infinite;
+}
+
+/* BUTTONS */
+
+.cn-button {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cn-btn {
+    padding: 2rem;
+    font-size: 3rem;
+    color: #6464e7;
+    border-radius: 10px;
+    z-index: 10;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.cn-btn:hover {
+    animation: spin;
+    animation-duration: 2s;
+}
+
+.cn-btn a:visited {
+    color: blue;
+}
+
+.cn-btn:focus {
+    outline: none;
+}
+
+.bracket {
+    color: #d8d22a;
+}
+
+.cn {
+    text-decoration: none;
+}
+
+.n {
+    font-weight: bold;
+}
+
+.buttons {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-container img {
+    height: 100px;
+    width: 100px;
+}
+
+.btn-container a {
+    margin: 4rem;
+    padding: 1.5rem;
+}
+
+.insta {
+    background-color: #e9e5e596; 
+    border-radius: 5%;
+    transition: 1s;
+    box-shadow: -10px 10px 0 #5450509d;
+}
+
+.insta:hover {
+    animation: grow 1s infinite;
+}
+
+.twitter {
+    background: #184a7c;
+    border-radius: 50%;
+    transition: 1s;
+    box-shadow: 0px 5px 0 #628fbe9d;
+}
+
+.twitter:hover {
+    animation: flip 1s infinite;
+}
+
+.facebook {
+    background: #3b5998;
+    border-radius: 40% 5% 40% 5%;
+    box-shadow: 10px 10px 0 #7e77779d;
+    transition: .5s;
+}
+
+.facebook:hover {
+    border-radius: 5% 40% 5% 40%;
+}
+
+
+
+/* BUBBLES */
+
+.item1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    position: absolute;
+    animation: bubble1 10s infinite linear;
+}
+
+.item1:after {
+    content: "";
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    filter: blur(2px);
+}
+
+.item2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    position: absolute;
+    animation: bubble2 17s infinite linear;
+}
+
+.item2:after {
+    content: "";
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    filter: blur(2px);
+}
+
+.item3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    position: absolute;
+    animation: bubble3 9s infinite linear;
+}
+
+.item3:after {
+    content: "";
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    filter: blur(2px);
+}
+
+.item4 {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    position: absolute;
+    animation: bubble4 28s infinite linear;
+}
+
+.item4:after {
+    content: "";
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    filter: blur(2px);
+}
+.item5 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    position: absolute;
+    animation: bubble5 13s infinite linear;
+}
+
+.item5:after {
+    content: "";
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    filter: blur(2px);
+}
+
+.item6 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.6) inset;
+    position: absolute;
+    animation: bubble6 19s infinite linear;
+}
+
+.item6:after {
+    content: "";
+    width: 20%;
+    height: 20%;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    right: 15%;
+    top: 15%;
+    filter: blur(2px);
+}
+
+
+
+
+/* KEYFRAMES */
+
+@keyframes bubble1 {
+    0% {left:0; bottom: 0}
+    10% {left: 2%}
+    20% {left: 0}
+    30% {left: 2%}
+    40% {left: 0}
+    50% {left: 2%}
+    60% {left: 0}
+    70% {left: 2%}
+    80% {left: 0}
+    90% {left: 2%}
+    100% {left: 0; bottom: 100%}
+}
+
+
+@keyframes bubble2 {
+    0% {left:15%; bottom: 0}
+    10% {left: 17%}
+    20% {left: 15%}
+    30% {left: 17%}
+    40% {left: 15%}
+    50% {left: 17%}
+    60% {left: 15%}
+    70% {left: 17%}
+    80% {left: 15%}
+    90% {left: 17%}
+    100% {left: 15%; bottom: 100%}
+}
+
+
+@keyframes bubble3 {
+    0% {left:35%; bottom: 0}
+    10% {left: 38%}
+    20% {left: 35%}
+    30% {left: 38%}
+    40% {left: 35%}
+    50% {left: 38%}
+    60% {left: 35%}
+    70% {left: 38%}
+    80% {left: 35%}
+    90% {left: 38%}
+    100% {left: 35%; bottom: 100%}
+}
+
+
+@keyframes bubble4 {
+    0% {left:50%; bottom: 0}
+    10% {left: 52%}
+    20% {left: 50%}
+    30% {left: 52%}
+    40% {left: 50%}
+    50% {left: 52%}
+    60% {left: 50%}
+    70% {left: 52%}
+    80% {left: 50%}
+    90% {left: 52%}
+    100% {left: 50%; bottom: 100%}
+}
+
+
+@keyframes bubble5 {
+    0% {left:75%; bottom: 0}
+    10% {left: 72%}
+    20% {left: 75%}
+    30% {left: 72%}
+    40% {left: 75%}
+    50% {left: 72%}
+    60% {left: 75%}
+    70% {left: 72%}
+    80% {left: 75%}
+    90% {left: 72%}
+    100% {left: 75%; bottom: 100%}
+}
+
+@keyframes bubble6 {
+    0% {right:5%; bottom: 0}
+    10% {right: 2%}
+    20% {right: 5%}
+    30% {right: 2%}
+    40% {right: 5%}
+    50% {right: 2%}
+    60% {right: 5%}
+    70% {right: 2%}
+    80% {right: 5%}
+    90% {right: 2%}
+    100% {right: 5%; bottom: 100%}
+}
+
+
+
+@keyframes grow {
+    0% {transform: scale(1)}
+    10% {transform: scale(1.2)}
+    20% {transform: scale(1)}
+    30% {transform: scale(1.2)}
+    40% {transform: scale(1)}
+    50% {transform: scale(1.2)}
+    60% {transform: scale(1)}
+    70% {transform: scale(1.2)}
+    80% {transform: scale(1)}
+    90% {transform: scale(1.2)}
+    100% {transform: scale(1)}
+}
+
+@keyframes flip {
+    from {transform: rotateX(0deg)}
+    to {transform: rotateX(360deg)}
+}
+
+@keyframes fish-swim {
+    from {left: 120%}
+    to {left: -500px; top: 0}
+}
+
+@keyframes shark-swim {
+    from {left: 120%}
+    to {left: -500px; top: 0}
+}
+
+@keyframes spin {
+    from {transform: rotate(0)}
+    to {transform: rotate(360deg)};
+}

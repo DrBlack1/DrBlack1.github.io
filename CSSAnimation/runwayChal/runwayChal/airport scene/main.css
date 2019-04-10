@@ -1,0 +1,371 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    background-color: #409648;
+}
+
+.ground, .airport, .car-park, .runway-one, .runway-two {
+    position: relative;
+}
+
+.ground { 
+    width: 800px;
+    background: lightgray;
+    margin-left: 400px;
+}
+
+.car-park {
+    height: 100px;
+    width: 400px;
+    background-color: slategray;
+    margin-left: 830px;
+    margin-top: 0px;
+}
+
+.airport {
+    height: 75px;
+    width: 500px;
+    background: gray;
+    margin-left: 150px;
+}
+
+.runway-one {
+    margin-top: 50px;
+    height: 160px;
+    background-color: #383a38;
+}
+
+.markings{
+    box-sizing: border-box;
+    border: 2px dashed gray;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.link-markings{ 
+    box-sizing: border-box;
+    border: 2px dashed gray;
+    height: 0px;
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: rotate(90deg);
+}
+
+.runway-link {
+    background-color:  #383a38;
+    position: absolute;
+    height: 350px;
+    width: 200px;
+    transform: rotate(-30deg);
+    margin-top: 100px;
+    margin-left: 400px;
+}
+
+.plane-1 {
+    position: absolute;
+    top: -70px;
+
+    animation: takeoff 5s ease-in 3s infinite normal both;
+}
+
+.runway-two {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    height: 160px;
+    background-color: #383a38;
+
+}
+
+.plane-2 {
+    position: absolute;
+    top: -70px;
+    left: 0px;
+
+    animation:  landing 12s ease-out 4s infinite normal both;
+}
+
+@keyframes takeoff {
+    from {transform: translateX(-500px) scale(0.5)}
+    to {transform: translateX(2000px) scale(1)};
+}
+
+@keyframes landing {
+    0% {transform: translateX(2000px) scale(1);
+        animation-timing-function: ease-out;}
+    25% {transform: translateX(700px) scale(0.5);
+        animation-timing-function: linear;}
+    26% {transform: translateX(680px) scale(0.55)}
+    27% {transform: translateX(640px) scale(0.5)}
+    50% {transform: translateX(270px) scale(0.5)}
+    75% {transform: translateX(270px) rotate(-120deg) scale(0.5)}
+    90% {transform: translateX(370px) translateY(185px) rotate(-120deg) scale(0.5)}
+    100% {transform: translateX(370px) translateY(185px) rotate(-120deg) scale(0.5)};
+}
+
+/* @keyframes bounce {
+    0% {transform: scale(0)}
+    50% {transform: scale(0.5)}
+    100% {transform: scale(1)}
+} */
+
+/* * {
+    box-sizing: border-box
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.grasstop {
+    background: green;
+    height: 40%;
+}
+
+.grasstop, .runway, .grass, .runway2, .grassbottom {
+    position: relative;
+}
+
+.Hangar1 {
+    position: absolute;
+    height: 202px;
+    width: 188px;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-left: 10px solid grey;
+    border-right: 10px solid grey;
+    left: 220px;
+}
+
+.Hangar2 {
+    position: absolute;
+    height: 202px;
+    width: 188px;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-left: 10px solid grey;
+    border-right: 10px solid grey;
+    left: 420px;
+}
+
+.fighter3 {
+    position: absolute;
+    top: -660px;
+    left: -572px;
+    transform: rotateZ(-22deg) scale(0.07);
+    z-index: 1;
+}
+
+.fighter4 {
+    position: absolute;
+    top: -569px;
+    left: -574px;
+    transform: rotateZ(157deg) scale(0.07);
+    z-index: 1;
+}
+
+.Hangar3 {
+    position: absolute;
+    height: 202px;
+    width: 188px;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-left: 10px solid grey;
+    border-right: 10px solid grey;
+    left: 620px;
+}
+
+.path {
+    position: absolute;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-left: 10px solid grey;
+    border-right: 10px solid grey;
+    width: 75px;
+    height: 55px;
+    top: 197px;
+    left: 278px;
+}
+
+.path1 {
+    position: absolute;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-left: 10px solid grey;
+    border-right: 10px solid grey;
+    width: 75px;
+    height: 55px;
+    top: 197px;
+    left: 478px;
+}
+
+.path2 {
+    position: absolute;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-left: 10px solid grey;
+    border-right: 10px solid grey;
+    width: 75px;
+    height: 55px;
+    top: 197px;
+    left: 678px;
+}
+
+.grasstop .forest {
+    position: absolute;
+    transform: scale(0.3);
+    left: -215px;
+    top: -200px;
+}
+
+.forest {
+    position: absolute;
+    transform: scale(0.3);
+    right: -218px;
+    top: -200px;
+}
+
+.Control {
+    width: 157px;
+    height: 123px;
+    background: grey;
+    position: absolute;
+    margin: 0px 1093px;
+    top: 66px;
+}
+
+.Control:before {
+    content: "";
+    width: 100px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 29px solid grey;
+    border-left: 29px solid green;
+    border-right: 29px solid green;
+}
+
+.Control:after {
+    content: "";
+    width: 100px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid grey;
+    border-left: 29px solid green;
+    border-right: 29px solid green;
+}
+
+.runway {
+    height: 13%;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+    width: 100%;
+}
+
+.grasstop, .runway, .grass, .runway2, .grassbottom {
+    position: relative;
+}
+
+.lines {
+    box-sizing: border-box;
+    border: 2.5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+.fighter1 {
+    position: absolute;
+    transform: scale(0.15);
+    z-index: 1;
+    top: -664px;
+    right: -815px;
+    animation: landing 20s forwards infinite ease-in, park 20s forwards 1 linear, takeoff2 20s forwards 1 cubic-bezier(0.4, 0, 1, 1);
+    animation-direction: normal;
+    animation-delay: 0s, 20s, 41s;
+}
+
+.grass {
+    background: green;
+    height: 10%;
+}
+
+.runway2 {
+    height: 13%;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 5px solid grey;
+    border-bottom: 5px solid grey;
+    width: 100%;
+}
+
+.lines2 {
+    box-sizing: border-box;
+    border: 2.5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+.fighter2 {
+    position: absolute;
+    transform: scale(0.07);
+    z-index: 3;
+    top: -665px;
+    left: -745px;
+    animation: takeoff 11s both infinite ease-in;
+}
+
+.grassbottom {
+    background: green;
+    height: 25%;
+}
+
+div {
+    display: block;
+}
+
+@keyframes takeoff {
+    0% {transform: translateX(0%) scale(0.07);}
+    40% {transform: translateX(30%) scale(0.07);}
+    80% {transform: translateX(40%) scale(0.07);}
+    100% {transform: translateX(110%) scale(0.2);}
+}
+
+@keyframes landing {
+    0% {transform: translateX(0%) scale(0.15);}
+    50% {transform: translate(-1100px) scale(0.07);}
+    100% {transform: translate(-1166px) scale(0.07);}
+}
+
+@keyframes park {
+    0% {transform: translateX(-1166px) scale(0.07);}
+    40% {transform: translateX(-1166px) rotateZ(90deg) scale(0.07);}
+    80% {transform: translate(-1166px) translateY(-243px) rotateZ(90deg) scale(0.07);}
+    100% {transform: translate(-1166px , -243px) rotateZ(270deg) scale(0.07);}
+}
+
+@keyframes takeoff2 {
+    0% {transform: translate(-1166px , -243px) rotateZ(270deg) scale(0.07);}
+    25% {transform: translate(-1166px) translateY(0px) rotateZ(270deg) scale(0.07);}
+    50% {transform: translate(-1166px , 0px) rotateZ(180deg) scale(0.07);}
+    75% {transform: translate(-1020px , 0px) rotateZ(180deg) scale(0.07);}
+    100% {transform: translate(45px , 0px) rotateZ(180deg) scale(0.3);}
+} */

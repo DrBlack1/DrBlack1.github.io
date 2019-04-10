@@ -1,0 +1,133 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+.grass, .sky, .runway {
+    position: relative;
+}
+
+.concrete{
+    height: 25%;
+    background: grey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+}
+
+.airport {
+    height: 50%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.parking {
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    background: grey;
+    text-align: center;
+}
+
+.grass{
+    height: 7.5%;
+    background: seagreen;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.drive{
+    height: 100%;
+    width: 7%;
+    margin: 0 6.5%;
+    background: grey;
+}
+
+.beach {
+    height: 7%;
+    background: rgb(212, 218, 130);
+}
+
+.water {
+    height: 7%;
+    background: rgb(0, 61, 230);
+}
+
+.runway{
+    height: 20%;
+    background: dimgrey;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+}
+
+.lines{
+    box-sizing: border-box;
+    border: 2px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 48%;
+}
+
+.plane {
+    height: 70%;
+}
+
+.plane1 {
+    position: relative;
+    z-index: auto;
+    left: 5%;
+    top: 15%;
+    animation: takeOff 8s forwards ease-in, land 6s 16s forwards ease-out, turn 2s 22s forwards linear, takeOff 8s 24s forwards ease-in;
+}
+
+.plane2 {
+    position: relative;
+    z-index: auto;
+    left: 5%;
+    top: 15%;
+    animation: land 6s ease-out, park 12s 6s forwards linear, taxi 12s 23s forwards linear reverse, takeOff 8s 35s forwards ease-in;
+}
+
+
+@keyframes takeOff {
+    0%{height: 70%; transform: translateX(-0px)}
+    50%{height: 70%; top: 15%}
+    100%{height: 130%; top: -13%; transform: translateX(1500px)};
+}
+
+@keyframes land {
+    0%{height: 130%; top: -13%; transform: translateX(1500px) rotateY(180deg)}
+    50%{height: 70%; top: 15%}
+    100%{height: 70%; top: 15%; transform: translateX(0px) rotateY(180deg)};
+}
+
+@keyframes park {
+    0%{left: 5%; transform: rotateZ(180deg)}
+    20%{transform: rotateZ(270deg)}
+    40%{transform: translateY(-200%) rotateZ(270deg)}
+    50%{transform: rotateZ(0deg) translateY(-200%)}
+    70%{transform: rotateZ(0deg)translateX(200%) translateY(-200%)}
+    80%{transform: translateX(213%) translateY(-200%) rotateZ(-90deg);}
+    100%{transform: translateX(213%) translateY(-230%) rotateZ(-90deg);}
+}
+
+@keyframes taxi {
+    0%{left: 5%; transform: rotateZ(0deg)}
+    20%{transform: rotateZ(-90deg)}
+    40%{transform: translateY(-200%) rotateZ(270deg)}
+    50%{transform: rotateZ(0deg) translateY(-200%)}
+    70%{transform: rotateZ(0deg)translateX(200%) translateY(-200%)}
+    80%{transform: translateX(213%) translateY(-200%) rotateZ(-90deg);}
+    100%{transform: translateX(213%) translateY(-230%) rotateZ(-90deg);}
+}
+
+@keyframes turn {
+    from{transform: rotateZ(180deg)}
+    to{transform: rotateZ(0deg)};
+}
