@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #6939a8, #7b60ba, #9184c9, #aba7d5, #cacadf);
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.title {
+    font-size: 6rem;
+    color: white;
+    letter-spacing: .8rem;
+    text-shadow: 8px 8px 0 #3c3a3a3c;
+}
+
+.game-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3rem;
+}
+
+.game {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.player {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    color: #eeee2a;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.dice-img {
+    border-radius: 5%;
+    box-shadow: 5px 5px 0 #807e7e4b;
+}
+
+
+.player1-score {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 3rem;
+    letter-spacing: .4rem;
+    text-shadow: 5px 5px 0 #3c3a3a3c;
+}
+
+.score1 {
+    font-size: 4rem;
+}
+
+
+.roll {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    align-self: center;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .1s;
+    border: none;
+    background-color: white;
+}
+
+.roll:focus {  
+    outline: none;
+}
+
+.roll:active {
+    transform: scale(0.95);
+}
+
+.roll:disabled {
+    background-color: #ff000098;
+    color: white;
+    opacity: 0.5;
+}
+
+.reset-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.reset {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    align-self: center;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .1s;
+    border: none;
+    background-color: white;
+    display: none;
+}
+
+.reset:focus {  
+    outline: none;
+}
+
+.reset:active {
+    transform: scale(0.95);
+}
+
+.player2-score {
+    text-align: center;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 3rem;
+    letter-spacing: .4rem;
+    text-shadow: 5px 5px 0 #3c3a3a3c;
+}
+
+.score2 {
+    font-size: 4rem;
+}
+
+.roll2 {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
+    align-self: center;
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .1s;
+    border: none;
+    background-color: white;
+}
+
+.roll2:focus {  
+    outline: none;
+}
+
+.roll2:active {
+    transform: scale(0.95);
+}
+
+.roll2:disabled {
+    background-color: #ff000098;
+    color: white;
+    opacity: 0.5;
+}
+
+.dice-img2 {
+    border-radius: 5%;
+    box-shadow: 5px 5px 0 #807e7e4b;
+}

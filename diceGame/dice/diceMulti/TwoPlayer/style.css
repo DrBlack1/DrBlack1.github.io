@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #b8c5e6;
+    font-family: 'Muli', sans-serif;
+    font-size: 10px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    height: 550px;
+    width: 900px;
+    border-radius: 1%;
+    box-shadow: 15px 15px 4px #26252560;
+    position: relative;
+}
+
+.new-game {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.new-game-title {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.new-game-title:active {
+    font-size: 1.25rem;
+}
+
+.add-svg {
+    height: 22px;
+    width: 22px;
+    vertical-align: top;
+    margin-left: .5rem;
+}
+
+.dice-img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 125px;
+    width: 125px;
+    border-radius: 5px;
+    display: none;
+}
+
+.player1-container {
+    background-color: #d83232;
+    margin: 1rem 0 1rem 1rem;
+}
+
+.player2-container {
+    background-color: #4067ba;
+    margin: 1rem 1rem 1rem 0;
+}
+
+.player1-title {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.player2-title {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.score-container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.player1-score {
+    color: white;
+    font-size: 6rem;
+}
+
+.player2-score {
+    color: white;
+    font-size: 6rem;
+}
+
+.p1-cur-container {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.p2-cur-container {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cur-title {
+    color: white;
+    margin: 0 0 .5rem 0;
+    font-size: 2rem;
+}
+
+.p1-cur-score {
+    color: white;
+    border-radius: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.p2-cur-score {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.roll-btn {
+    color: white;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.roll-btn:hover {
+    cursor: pointer;
+}
+
+.roll-btn:active {
+    font-size: 1.25rem;
+}
+
+.reload-svg {
+    height: 20px;
+    width: 20px;
+    margin-right: .5rem;
+    vertical-align: top;
+}
+
+.hold-btn {
+    color: white;
+    font-size: 1.3rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hold-btn:hover {
+    cursor: pointer;
+}
+
+.hold-btn:active {
+    font-size: 1.25rem;
+}
+
+.hold-svg {
+    height: 25px;
+    width: 25px;
+    margin-right: .5rem;
+    vertical-align: top;
+}
+
+.noselect {
+user-select: none;
+}
+
+
+.p1-active {
+    animation: p1-blink 3s infinite linear;
+}
+
+.p2-active {
+    animation: p2-blink 1s infinite linear;
+}
+
+@keyframes p1-blink {
+    0%{background: #d83232}
+    25%{background: #853b3b}
+    50%{background: #d83232}
+    75%{background: #853b3b}
+    100% {background: #d83232};
+}
+
+@keyframes p2-blink {
+    0%{background: #4067ba}
+    50%{background: #39496b}
+    100% {background: #4067ba};
+}
