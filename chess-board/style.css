@@ -1,0 +1,23 @@
+html, body, .chess-board-container {
+  height: 100%;
+  width: 100%;
+}
+
+.chess-board-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.square {
+  height: 13%;
+  width: 12%;
+  border: black 1px solid;
+}
+/*# sourceMappingURL=style.css.map */

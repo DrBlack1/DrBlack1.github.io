@@ -1,0 +1,18 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+body {
+    @extend html;
+ }
+.chess-board-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    @extend html;
+}
+.square {
+    height: 13%;
+    width: 12%;
+    border: black 1px solid;
+}
