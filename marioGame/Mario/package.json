@@ -1,0 +1,30 @@
+{
+  "name": "Mario",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "mocha ./spec"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-dom": "^1.8.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test": "mocha ./spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KSR247/Mario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KSR247/Mario/issues"
+  },
+  "homepage": "https://github.com/KSR247/Mario#readme"
+}

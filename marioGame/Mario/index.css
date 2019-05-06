@@ -1,0 +1,128 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ------------------Battle page props ---------------- */
+
+.health {
+  background-color: rgb(29, 235, 29);
+}
+li {
+  list-style: none;
+}
+li:hover {
+  color: rgb(231, 65, 15);
+  transform: scale(1.2);
+  list-style: none;
+}
+h3:hover {
+  border: black 2px solid;
+}
+
+.arena {
+  height: 500px;
+  width: 50rem;
+  border: 5px black solid;
+  position: fixed;
+  top: 100px;
+  left: 400px;
+  background-image: url(./images/background2.jpg);
+  background-repeat: no-repeat;
+  background-size: 800px 500px;
+}
+
+/* ------------------player one props ------------ ---- */
+.wrapperOne {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  bottom: 0;
+  height: 18rem;
+  width: 40em;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.playerOne {
+  background-image: url(./images/mario.png);
+  background-repeat: no-repeat;
+  height: 90%;
+  width: 30%;
+  margin-left: -450px;
+  background-size: 200px 200px;
+  transform: scaleX(-1);
+}
+
+.playerImageOne {
+  height: 220px;
+}
+
+.healthBarOne {
+  height: 30px;
+  width: 0%; /* The health is defined by width, to change the health modify the width */
+  background-color: gray;
+}
+
+.movesOne {
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* ------------------player two props ---------------- */
+
+.wrapperTwo {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  top: 0;
+  right: 0;
+  height: 10rem;
+  width: 33%;
+  align-content: space-evenly;
+  flex-wrap: wrap-reverse;
+  /* border: 2px solid black; */
+}
+
+.playerTwo {
+  background-image: url(./images/mario2.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 35%;
+  margin-left: 300px;
+  margin-top: 50px;
+  background-size: 150px 150px;
+}
+
+.playerImageTwo {
+  height: 200px;
+}
+
+.healthBarTwo {
+  height: 30px;
+  width: 0%;
+  background-color: gray;
+}
+
+.movesTwo {
+  font-size: 1.5rem;
+  padding-right: 150px;
+  color: white;
+}
+
+/* .battle {
+  display: flex;
+  align-content: center;
+  font-size: 100px;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+} */
