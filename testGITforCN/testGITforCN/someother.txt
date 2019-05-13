@@ -1,0 +1,12 @@
+adding some new shit yo
+
+
+
+
+This was added to see what would happen when I messed with the master branch while Dan was working on a feature branch.
+He will then update the local master, checkout collabbranch and merge the master with the branch.
+
+then push it back. lets' see what happens.
+
+
+My name is Dan.
