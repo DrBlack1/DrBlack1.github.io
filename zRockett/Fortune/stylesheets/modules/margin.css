@@ -1,0 +1,578 @@
+/*
+ * TODO: add negatives
+ */
+.margin\3A 0       { margin        : 0                                   ; }
+.margin\3A 1       { margin        :      var(--size\3A 1)               ; }
+.margin\3A 2       { margin        :      var(--size\3A 2)               ; }
+.margin\3A 3       { margin        :      var(--size\3A 3)               ; }
+.margin\3A 4       { margin        :      var(--size\3A 4)               ; }
+.margin\3A 5       { margin        :      var(--size\3A 5)               ; }
+.margin\3A 6       { margin        :      var(--size\3A 6)               ; }
+.margin\3A 7       { margin        :      var(--size\3A 7)               ; }
+.margin\3A 8       { margin        :      var(--size\3A 8)               ; }
+.margin\3A 1\/xs   { margin        : calc(var(--size\3A 1) * var(--\/xs)); }
+.margin\3A 2\/xs   { margin        : calc(var(--size\3A 2) * var(--\/xs)); }
+.margin\3A 3\/xs   { margin        : calc(var(--size\3A 3) * var(--\/xs)); }
+.margin\3A 4\/xs   { margin        : calc(var(--size\3A 4) * var(--\/xs)); }
+.margin\3A 5\/xs   { margin        : calc(var(--size\3A 5) * var(--\/xs)); }
+.margin\3A 6\/xs   { margin        : calc(var(--size\3A 6) * var(--\/xs)); }
+.margin\3A 7\/xs   { margin        : calc(var(--size\3A 7) * var(--\/xs)); }
+.margin\3A 8\/xs   { margin        : calc(var(--size\3A 8) * var(--\/xs)); }
+.margin\3A 1\/sm   { margin        : calc(var(--size\3A 1) * var(--\/sm)); }
+.margin\3A 2\/sm   { margin        : calc(var(--size\3A 2) * var(--\/sm)); }
+.margin\3A 3\/sm   { margin        : calc(var(--size\3A 3) * var(--\/sm)); }
+.margin\3A 4\/sm   { margin        : calc(var(--size\3A 4) * var(--\/sm)); }
+.margin\3A 5\/sm   { margin        : calc(var(--size\3A 5) * var(--\/sm)); }
+.margin\3A 6\/sm   { margin        : calc(var(--size\3A 6) * var(--\/sm)); }
+.margin\3A 7\/sm   { margin        : calc(var(--size\3A 7) * var(--\/sm)); }
+.margin\3A 8\/sm   { margin        : calc(var(--size\3A 8) * var(--\/sm)); }
+.margin\3A 1\/md   { margin        : calc(var(--size\3A 1) * var(--\/md)); }
+.margin\3A 2\/md   { margin        : calc(var(--size\3A 2) * var(--\/md)); }
+.margin\3A 3\/md   { margin        : calc(var(--size\3A 3) * var(--\/md)); }
+.margin\3A 4\/md   { margin        : calc(var(--size\3A 4) * var(--\/md)); }
+.margin\3A 5\/md   { margin        : calc(var(--size\3A 5) * var(--\/md)); }
+.margin\3A 6\/md   { margin        : calc(var(--size\3A 6) * var(--\/md)); }
+.margin\3A 7\/md   { margin        : calc(var(--size\3A 7) * var(--\/md)); }
+.margin\3A 8\/md   { margin        : calc(var(--size\3A 8) * var(--\/md)); }
+.margin\3A 1\/lg   { margin        : calc(var(--size\3A 1) * var(--\/lg)); }
+.margin\3A 2\/lg   { margin        : calc(var(--size\3A 2) * var(--\/lg)); }
+.margin\3A 3\/lg   { margin        : calc(var(--size\3A 3) * var(--\/lg)); }
+.margin\3A 4\/lg   { margin        : calc(var(--size\3A 4) * var(--\/lg)); }
+.margin\3A 5\/lg   { margin        : calc(var(--size\3A 5) * var(--\/lg)); }
+.margin\3A 6\/lg   { margin        : calc(var(--size\3A 6) * var(--\/lg)); }
+.margin\3A 7\/lg   { margin        : calc(var(--size\3A 7) * var(--\/lg)); }
+.margin\3A 8\/lg   { margin        : calc(var(--size\3A 8) * var(--\/lg)); }
+.margin\3A 1\*sm   { margin        : calc(var(--size\3A 1) * var(--\*sm)); }
+.margin\3A 2\*sm   { margin        : calc(var(--size\3A 2) * var(--\*sm)); }
+.margin\3A 3\*sm   { margin        : calc(var(--size\3A 3) * var(--\*sm)); }
+.margin\3A 4\*sm   { margin        : calc(var(--size\3A 4) * var(--\*sm)); }
+.margin\3A 5\*sm   { margin        : calc(var(--size\3A 5) * var(--\*sm)); }
+.margin\3A 6\*sm   { margin        : calc(var(--size\3A 6) * var(--\*sm)); }
+.margin\3A 7\*sm   { margin        : calc(var(--size\3A 7) * var(--\*sm)); }
+.margin\3A 8\*sm   { margin        : calc(var(--size\3A 8) * var(--\*sm)); }
+.margin\3A 1\*md   { margin        : calc(var(--size\3A 1) * var(--\*md)); }
+.margin\3A 2\*md   { margin        : calc(var(--size\3A 2) * var(--\*md)); }
+.margin\3A 3\*md   { margin        : calc(var(--size\3A 3) * var(--\*md)); }
+.margin\3A 4\*md   { margin        : calc(var(--size\3A 4) * var(--\*md)); }
+.margin\3A 5\*md   { margin        : calc(var(--size\3A 5) * var(--\*md)); }
+.margin\3A 6\*md   { margin        : calc(var(--size\3A 6) * var(--\*md)); }
+.margin\3A 7\*md   { margin        : calc(var(--size\3A 7) * var(--\*md)); }
+.margin\3A 8\*md   { margin        : calc(var(--size\3A 8) * var(--\*md)); }
+.margin\3A 1\*lg   { margin        : calc(var(--size\3A 1) * var(--\*lg)); }
+.margin\3A 2\*lg   { margin        : calc(var(--size\3A 2) * var(--\*lg)); }
+.margin\3A 3\*lg   { margin        : calc(var(--size\3A 3) * var(--\*lg)); }
+.margin\3A 4\*lg   { margin        : calc(var(--size\3A 4) * var(--\*lg)); }
+.margin\3A 5\*lg   { margin        : calc(var(--size\3A 5) * var(--\*lg)); }
+.margin\3A 6\*lg   { margin        : calc(var(--size\3A 6) * var(--\*lg)); }
+.margin\3A 7\*lg   { margin        : calc(var(--size\3A 7) * var(--\*lg)); }
+.margin\3A 8\*lg   { margin        : calc(var(--size\3A 8) * var(--\*lg)); }
+.margin\3A 1\*xl   { margin        : calc(var(--size\3A 1) * var(--\*xl)); }
+.margin\3A 2\*xl   { margin        : calc(var(--size\3A 2) * var(--\*xl)); }
+.margin\3A 3\*xl   { margin        : calc(var(--size\3A 3) * var(--\*xl)); }
+.margin\3A 4\*xl   { margin        : calc(var(--size\3A 4) * var(--\*xl)); }
+.margin\3A 5\*xl   { margin        : calc(var(--size\3A 5) * var(--\*xl)); }
+.margin\3A 6\*xl   { margin        : calc(var(--size\3A 6) * var(--\*xl)); }
+.margin\3A 7\*xl   { margin        : calc(var(--size\3A 7) * var(--\*xl)); }
+.margin\3A 8\*xl   { margin        : calc(var(--size\3A 8) * var(--\*xl)); }
+.margin-y\3A 0     { margin-top    : 0                                   ; margin-bottom : 0                                   ; }
+.margin-y\3A 1     { margin-top    :      var(--size\3A 1)               ; margin-bottom :      var(--size\3A 1)               ; }
+.margin-y\3A 2     { margin-top    :      var(--size\3A 2)               ; margin-bottom :      var(--size\3A 2)               ; }
+.margin-y\3A 3     { margin-top    :      var(--size\3A 3)               ; margin-bottom :      var(--size\3A 3)               ; }
+.margin-y\3A 4     { margin-top    :      var(--size\3A 4)               ; margin-bottom :      var(--size\3A 4)               ; }
+.margin-y\3A 5     { margin-top    :      var(--size\3A 5)               ; margin-bottom :      var(--size\3A 5)               ; }
+.margin-y\3A 6     { margin-top    :      var(--size\3A 6)               ; margin-bottom :      var(--size\3A 6)               ; }
+.margin-y\3A 7     { margin-top    :      var(--size\3A 7)               ; margin-bottom :      var(--size\3A 7)               ; }
+.margin-y\3A 8     { margin-top    :      var(--size\3A 8)               ; margin-bottom :      var(--size\3A 8)               ; }
+.margin-y\3A 1\/xs { margin-top    : calc(var(--size\3A 1) * var(--\/xs)); margin-bottom : calc(var(--size\3A 1) * var(--\/xs)); }
+.margin-y\3A 2\/xs { margin-top    : calc(var(--size\3A 2) * var(--\/xs)); margin-bottom : calc(var(--size\3A 2) * var(--\/xs)); }
+.margin-y\3A 3\/xs { margin-top    : calc(var(--size\3A 3) * var(--\/xs)); margin-bottom : calc(var(--size\3A 3) * var(--\/xs)); }
+.margin-y\3A 4\/xs { margin-top    : calc(var(--size\3A 4) * var(--\/xs)); margin-bottom : calc(var(--size\3A 4) * var(--\/xs)); }
+.margin-y\3A 5\/xs { margin-top    : calc(var(--size\3A 5) * var(--\/xs)); margin-bottom : calc(var(--size\3A 5) * var(--\/xs)); }
+.margin-y\3A 6\/xs { margin-top    : calc(var(--size\3A 6) * var(--\/xs)); margin-bottom : calc(var(--size\3A 6) * var(--\/xs)); }
+.margin-y\3A 7\/xs { margin-top    : calc(var(--size\3A 7) * var(--\/xs)); margin-bottom : calc(var(--size\3A 7) * var(--\/xs)); }
+.margin-y\3A 8\/xs { margin-top    : calc(var(--size\3A 8) * var(--\/xs)); margin-bottom : calc(var(--size\3A 8) * var(--\/xs)); }
+.margin-y\3A 1\/sm { margin-top    : calc(var(--size\3A 1) * var(--\/sm)); margin-bottom : calc(var(--size\3A 1) * var(--\/sm)); }
+.margin-y\3A 2\/sm { margin-top    : calc(var(--size\3A 2) * var(--\/sm)); margin-bottom : calc(var(--size\3A 2) * var(--\/sm)); }
+.margin-y\3A 3\/sm { margin-top    : calc(var(--size\3A 3) * var(--\/sm)); margin-bottom : calc(var(--size\3A 3) * var(--\/sm)); }
+.margin-y\3A 4\/sm { margin-top    : calc(var(--size\3A 4) * var(--\/sm)); margin-bottom : calc(var(--size\3A 4) * var(--\/sm)); }
+.margin-y\3A 5\/sm { margin-top    : calc(var(--size\3A 5) * var(--\/sm)); margin-bottom : calc(var(--size\3A 5) * var(--\/sm)); }
+.margin-y\3A 6\/sm { margin-top    : calc(var(--size\3A 6) * var(--\/sm)); margin-bottom : calc(var(--size\3A 6) * var(--\/sm)); }
+.margin-y\3A 7\/sm { margin-top    : calc(var(--size\3A 7) * var(--\/sm)); margin-bottom : calc(var(--size\3A 7) * var(--\/sm)); }
+.margin-y\3A 8\/sm { margin-top    : calc(var(--size\3A 8) * var(--\/sm)); margin-bottom : calc(var(--size\3A 8) * var(--\/sm)); }
+.margin-y\3A 1\/md { margin-top    : calc(var(--size\3A 1) * var(--\/md)); margin-bottom : calc(var(--size\3A 1) * var(--\/md)); }
+.margin-y\3A 2\/md { margin-top    : calc(var(--size\3A 2) * var(--\/md)); margin-bottom : calc(var(--size\3A 2) * var(--\/md)); }
+.margin-y\3A 3\/md { margin-top    : calc(var(--size\3A 3) * var(--\/md)); margin-bottom : calc(var(--size\3A 3) * var(--\/md)); }
+.margin-y\3A 4\/md { margin-top    : calc(var(--size\3A 4) * var(--\/md)); margin-bottom : calc(var(--size\3A 4) * var(--\/md)); }
+.margin-y\3A 5\/md { margin-top    : calc(var(--size\3A 5) * var(--\/md)); margin-bottom : calc(var(--size\3A 5) * var(--\/md)); }
+.margin-y\3A 6\/md { margin-top    : calc(var(--size\3A 6) * var(--\/md)); margin-bottom : calc(var(--size\3A 6) * var(--\/md)); }
+.margin-y\3A 7\/md { margin-top    : calc(var(--size\3A 7) * var(--\/md)); margin-bottom : calc(var(--size\3A 7) * var(--\/md)); }
+.margin-y\3A 8\/md { margin-top    : calc(var(--size\3A 8) * var(--\/md)); margin-bottom : calc(var(--size\3A 8) * var(--\/md)); }
+.margin-y\3A 1\/lg { margin-top    : calc(var(--size\3A 1) * var(--\/lg)); margin-bottom : calc(var(--size\3A 1) * var(--\/lg)); }
+.margin-y\3A 2\/lg { margin-top    : calc(var(--size\3A 2) * var(--\/lg)); margin-bottom : calc(var(--size\3A 2) * var(--\/lg)); }
+.margin-y\3A 3\/lg { margin-top    : calc(var(--size\3A 3) * var(--\/lg)); margin-bottom : calc(var(--size\3A 3) * var(--\/lg)); }
+.margin-y\3A 4\/lg { margin-top    : calc(var(--size\3A 4) * var(--\/lg)); margin-bottom : calc(var(--size\3A 4) * var(--\/lg)); }
+.margin-y\3A 5\/lg { margin-top    : calc(var(--size\3A 5) * var(--\/lg)); margin-bottom : calc(var(--size\3A 5) * var(--\/lg)); }
+.margin-y\3A 6\/lg { margin-top    : calc(var(--size\3A 6) * var(--\/lg)); margin-bottom : calc(var(--size\3A 6) * var(--\/lg)); }
+.margin-y\3A 7\/lg { margin-top    : calc(var(--size\3A 7) * var(--\/lg)); margin-bottom : calc(var(--size\3A 7) * var(--\/lg)); }
+.margin-y\3A 8\/lg { margin-top    : calc(var(--size\3A 8) * var(--\/lg)); margin-bottom : calc(var(--size\3A 8) * var(--\/lg)); }
+.margin-y\3A 1\*sm { margin-top    : calc(var(--size\3A 1) * var(--\*sm)); margin-bottom : calc(var(--size\3A 1) * var(--\*sm)); }
+.margin-y\3A 2\*sm { margin-top    : calc(var(--size\3A 2) * var(--\*sm)); margin-bottom : calc(var(--size\3A 2) * var(--\*sm)); }
+.margin-y\3A 3\*sm { margin-top    : calc(var(--size\3A 3) * var(--\*sm)); margin-bottom : calc(var(--size\3A 3) * var(--\*sm)); }
+.margin-y\3A 4\*sm { margin-top    : calc(var(--size\3A 4) * var(--\*sm)); margin-bottom : calc(var(--size\3A 4) * var(--\*sm)); }
+.margin-y\3A 5\*sm { margin-top    : calc(var(--size\3A 5) * var(--\*sm)); margin-bottom : calc(var(--size\3A 5) * var(--\*sm)); }
+.margin-y\3A 6\*sm { margin-top    : calc(var(--size\3A 6) * var(--\*sm)); margin-bottom : calc(var(--size\3A 6) * var(--\*sm)); }
+.margin-y\3A 7\*sm { margin-top    : calc(var(--size\3A 7) * var(--\*sm)); margin-bottom : calc(var(--size\3A 7) * var(--\*sm)); }
+.margin-y\3A 8\*sm { margin-top    : calc(var(--size\3A 8) * var(--\*sm)); margin-bottom : calc(var(--size\3A 8) * var(--\*sm)); }
+.margin-y\3A 1\*md { margin-top    : calc(var(--size\3A 1) * var(--\*md)); margin-bottom : calc(var(--size\3A 1) * var(--\*md)); }
+.margin-y\3A 2\*md { margin-top    : calc(var(--size\3A 2) * var(--\*md)); margin-bottom : calc(var(--size\3A 2) * var(--\*md)); }
+.margin-y\3A 3\*md { margin-top    : calc(var(--size\3A 3) * var(--\*md)); margin-bottom : calc(var(--size\3A 3) * var(--\*md)); }
+.margin-y\3A 4\*md { margin-top    : calc(var(--size\3A 4) * var(--\*md)); margin-bottom : calc(var(--size\3A 4) * var(--\*md)); }
+.margin-y\3A 5\*md { margin-top    : calc(var(--size\3A 5) * var(--\*md)); margin-bottom : calc(var(--size\3A 5) * var(--\*md)); }
+.margin-y\3A 6\*md { margin-top    : calc(var(--size\3A 6) * var(--\*md)); margin-bottom : calc(var(--size\3A 6) * var(--\*md)); }
+.margin-y\3A 7\*md { margin-top    : calc(var(--size\3A 7) * var(--\*md)); margin-bottom : calc(var(--size\3A 7) * var(--\*md)); }
+.margin-y\3A 8\*md { margin-top    : calc(var(--size\3A 8) * var(--\*md)); margin-bottom : calc(var(--size\3A 8) * var(--\*md)); }
+.margin-y\3A 1\*lg { margin-top    : calc(var(--size\3A 1) * var(--\*lg)); margin-bottom : calc(var(--size\3A 1) * var(--\*lg)); }
+.margin-y\3A 2\*lg { margin-top    : calc(var(--size\3A 2) * var(--\*lg)); margin-bottom : calc(var(--size\3A 2) * var(--\*lg)); }
+.margin-y\3A 3\*lg { margin-top    : calc(var(--size\3A 3) * var(--\*lg)); margin-bottom : calc(var(--size\3A 3) * var(--\*lg)); }
+.margin-y\3A 4\*lg { margin-top    : calc(var(--size\3A 4) * var(--\*lg)); margin-bottom : calc(var(--size\3A 4) * var(--\*lg)); }
+.margin-y\3A 5\*lg { margin-top    : calc(var(--size\3A 5) * var(--\*lg)); margin-bottom : calc(var(--size\3A 5) * var(--\*lg)); }
+.margin-y\3A 6\*lg { margin-top    : calc(var(--size\3A 6) * var(--\*lg)); margin-bottom : calc(var(--size\3A 6) * var(--\*lg)); }
+.margin-y\3A 7\*lg { margin-top    : calc(var(--size\3A 7) * var(--\*lg)); margin-bottom : calc(var(--size\3A 7) * var(--\*lg)); }
+.margin-y\3A 8\*lg { margin-top    : calc(var(--size\3A 8) * var(--\*lg)); margin-bottom : calc(var(--size\3A 8) * var(--\*lg)); }
+.margin-y\3A 1\*xl { margin-top    : calc(var(--size\3A 1) * var(--\*lg)); margin-bottom : calc(var(--size\3A 1) * var(--\*xl)); }
+.margin-y\3A 2\*xl { margin-top    : calc(var(--size\3A 2) * var(--\*lg)); margin-bottom : calc(var(--size\3A 2) * var(--\*xl)); }
+.margin-y\3A 3\*xl { margin-top    : calc(var(--size\3A 3) * var(--\*lg)); margin-bottom : calc(var(--size\3A 3) * var(--\*xl)); }
+.margin-y\3A 4\*xl { margin-top    : calc(var(--size\3A 4) * var(--\*lg)); margin-bottom : calc(var(--size\3A 4) * var(--\*xl)); }
+.margin-y\3A 5\*xl { margin-top    : calc(var(--size\3A 5) * var(--\*lg)); margin-bottom : calc(var(--size\3A 5) * var(--\*xl)); }
+.margin-y\3A 6\*xl { margin-top    : calc(var(--size\3A 6) * var(--\*lg)); margin-bottom : calc(var(--size\3A 6) * var(--\*xl)); }
+.margin-y\3A 7\*xl { margin-top    : calc(var(--size\3A 7) * var(--\*lg)); margin-bottom : calc(var(--size\3A 7) * var(--\*xl)); }
+.margin-y\3A 8\*xl { margin-top    : calc(var(--size\3A 8) * var(--\*lg)); margin-bottom : calc(var(--size\3A 8) * var(--\*xl)); }
+.margin-x\3A 0     { margin-right  : 0                                   ; margin-left   : 0                                   ; }
+.margin-x\3A 1     { margin-right  :      var(--size\3A 1)               ; margin-left   :      var(--size\3A 1)               ; }
+.margin-x\3A 2     { margin-right  :      var(--size\3A 2)               ; margin-left   :      var(--size\3A 2)               ; }
+.margin-x\3A 3     { margin-right  :      var(--size\3A 3)               ; margin-left   :      var(--size\3A 3)               ; }
+.margin-x\3A 4     { margin-right  :      var(--size\3A 4)               ; margin-left   :      var(--size\3A 4)               ; }
+.margin-x\3A 5     { margin-right  :      var(--size\3A 5)               ; margin-left   :      var(--size\3A 5)               ; }
+.margin-x\3A 6     { margin-right  :      var(--size\3A 6)               ; margin-left   :      var(--size\3A 6)               ; }
+.margin-x\3A 7     { margin-right  :      var(--size\3A 7)               ; margin-left   :      var(--size\3A 7)               ; }
+.margin-x\3A 8     { margin-right  :      var(--size\3A 8)               ; margin-left   :      var(--size\3A 8)               ; }
+.margin-x\3A 1\/xs { margin-right  : calc(var(--size\3A 1) * var(--\/xs)); margin-left   : calc(var(--size\3A 1) * var(--\/xs)); }
+.margin-x\3A 2\/xs { margin-right  : calc(var(--size\3A 2) * var(--\/xs)); margin-left   : calc(var(--size\3A 2) * var(--\/xs)); }
+.margin-x\3A 3\/xs { margin-right  : calc(var(--size\3A 3) * var(--\/xs)); margin-left   : calc(var(--size\3A 3) * var(--\/xs)); }
+.margin-x\3A 4\/xs { margin-right  : calc(var(--size\3A 4) * var(--\/xs)); margin-left   : calc(var(--size\3A 4) * var(--\/xs)); }
+.margin-x\3A 5\/xs { margin-right  : calc(var(--size\3A 5) * var(--\/xs)); margin-left   : calc(var(--size\3A 5) * var(--\/xs)); }
+.margin-x\3A 6\/xs { margin-right  : calc(var(--size\3A 6) * var(--\/xs)); margin-left   : calc(var(--size\3A 6) * var(--\/xs)); }
+.margin-x\3A 7\/xs { margin-right  : calc(var(--size\3A 7) * var(--\/xs)); margin-left   : calc(var(--size\3A 7) * var(--\/xs)); }
+.margin-x\3A 8\/xs { margin-right  : calc(var(--size\3A 8) * var(--\/xs)); margin-left   : calc(var(--size\3A 8) * var(--\/xs)); }
+.margin-x\3A 1\/sm { margin-right  : calc(var(--size\3A 1) * var(--\/sm)); margin-left   : calc(var(--size\3A 1) * var(--\/sm)); }
+.margin-x\3A 2\/sm { margin-right  : calc(var(--size\3A 2) * var(--\/sm)); margin-left   : calc(var(--size\3A 2) * var(--\/sm)); }
+.margin-x\3A 3\/sm { margin-right  : calc(var(--size\3A 3) * var(--\/sm)); margin-left   : calc(var(--size\3A 3) * var(--\/sm)); }
+.margin-x\3A 4\/sm { margin-right  : calc(var(--size\3A 4) * var(--\/sm)); margin-left   : calc(var(--size\3A 4) * var(--\/sm)); }
+.margin-x\3A 5\/sm { margin-right  : calc(var(--size\3A 5) * var(--\/sm)); margin-left   : calc(var(--size\3A 5) * var(--\/sm)); }
+.margin-x\3A 6\/sm { margin-right  : calc(var(--size\3A 6) * var(--\/sm)); margin-left   : calc(var(--size\3A 6) * var(--\/sm)); }
+.margin-x\3A 7\/sm { margin-right  : calc(var(--size\3A 7) * var(--\/sm)); margin-left   : calc(var(--size\3A 7) * var(--\/sm)); }
+.margin-x\3A 8\/sm { margin-right  : calc(var(--size\3A 8) * var(--\/sm)); margin-left   : calc(var(--size\3A 8) * var(--\/sm)); }
+.margin-x\3A 1\/md { margin-right  : calc(var(--size\3A 1) * var(--\/md)); margin-left   : calc(var(--size\3A 1) * var(--\/md)); }
+.margin-x\3A 2\/md { margin-right  : calc(var(--size\3A 2) * var(--\/md)); margin-left   : calc(var(--size\3A 2) * var(--\/md)); }
+.margin-x\3A 3\/md { margin-right  : calc(var(--size\3A 3) * var(--\/md)); margin-left   : calc(var(--size\3A 3) * var(--\/md)); }
+.margin-x\3A 4\/md { margin-right  : calc(var(--size\3A 4) * var(--\/md)); margin-left   : calc(var(--size\3A 4) * var(--\/md)); }
+.margin-x\3A 5\/md { margin-right  : calc(var(--size\3A 5) * var(--\/md)); margin-left   : calc(var(--size\3A 5) * var(--\/md)); }
+.margin-x\3A 6\/md { margin-right  : calc(var(--size\3A 6) * var(--\/md)); margin-left   : calc(var(--size\3A 6) * var(--\/md)); }
+.margin-x\3A 7\/md { margin-right  : calc(var(--size\3A 7) * var(--\/md)); margin-left   : calc(var(--size\3A 7) * var(--\/md)); }
+.margin-x\3A 8\/md { margin-right  : calc(var(--size\3A 8) * var(--\/md)); margin-left   : calc(var(--size\3A 8) * var(--\/md)); }
+.margin-x\3A 1\/lg { margin-right  : calc(var(--size\3A 1) * var(--\/lg)); margin-left   : calc(var(--size\3A 1) * var(--\/lg)); }
+.margin-x\3A 2\/lg { margin-right  : calc(var(--size\3A 2) * var(--\/lg)); margin-left   : calc(var(--size\3A 2) * var(--\/lg)); }
+.margin-x\3A 3\/lg { margin-right  : calc(var(--size\3A 3) * var(--\/lg)); margin-left   : calc(var(--size\3A 3) * var(--\/lg)); }
+.margin-x\3A 4\/lg { margin-right  : calc(var(--size\3A 4) * var(--\/lg)); margin-left   : calc(var(--size\3A 4) * var(--\/lg)); }
+.margin-x\3A 5\/lg { margin-right  : calc(var(--size\3A 5) * var(--\/lg)); margin-left   : calc(var(--size\3A 5) * var(--\/lg)); }
+.margin-x\3A 6\/lg { margin-right  : calc(var(--size\3A 6) * var(--\/lg)); margin-left   : calc(var(--size\3A 6) * var(--\/lg)); }
+.margin-x\3A 7\/lg { margin-right  : calc(var(--size\3A 7) * var(--\/lg)); margin-left   : calc(var(--size\3A 7) * var(--\/lg)); }
+.margin-x\3A 8\/lg { margin-right  : calc(var(--size\3A 8) * var(--\/lg)); margin-left   : calc(var(--size\3A 8) * var(--\/lg)); }
+.margin-x\3A 1\/xl { margin-right  : calc(var(--size\3A 1) * var(--\/xl)); margin-left   : calc(var(--size\3A 1) * var(--\/xl)); }
+.margin-x\3A 2\/xl { margin-right  : calc(var(--size\3A 2) * var(--\/xl)); margin-left   : calc(var(--size\3A 2) * var(--\/xl)); }
+.margin-x\3A 3\/xl { margin-right  : calc(var(--size\3A 3) * var(--\/xl)); margin-left   : calc(var(--size\3A 3) * var(--\/xl)); }
+.margin-x\3A 4\/xl { margin-right  : calc(var(--size\3A 4) * var(--\/xl)); margin-left   : calc(var(--size\3A 4) * var(--\/xl)); }
+.margin-x\3A 5\/xl { margin-right  : calc(var(--size\3A 5) * var(--\/xl)); margin-left   : calc(var(--size\3A 5) * var(--\/xl)); }
+.margin-x\3A 6\/xl { margin-right  : calc(var(--size\3A 6) * var(--\/xl)); margin-left   : calc(var(--size\3A 6) * var(--\/xl)); }
+.margin-x\3A 7\/xl { margin-right  : calc(var(--size\3A 7) * var(--\/xl)); margin-left   : calc(var(--size\3A 7) * var(--\/xl)); }
+.margin-x\3A 8\/xl { margin-right  : calc(var(--size\3A 8) * var(--\/xl)); margin-left   : calc(var(--size\3A 8) * var(--\/xl)); }
+.margin-x\3A 1\*xs { margin-right  : calc(var(--size\3A 1) * var(--\*xs)); margin-left   : calc(var(--size\3A 1) * var(--\*xs)); }
+.margin-x\3A 2\*xs { margin-right  : calc(var(--size\3A 2) * var(--\*xs)); margin-left   : calc(var(--size\3A 2) * var(--\*xs)); }
+.margin-x\3A 3\*xs { margin-right  : calc(var(--size\3A 3) * var(--\*xs)); margin-left   : calc(var(--size\3A 3) * var(--\*xs)); }
+.margin-x\3A 4\*xs { margin-right  : calc(var(--size\3A 4) * var(--\*xs)); margin-left   : calc(var(--size\3A 4) * var(--\*xs)); }
+.margin-x\3A 5\*xs { margin-right  : calc(var(--size\3A 5) * var(--\*xs)); margin-left   : calc(var(--size\3A 5) * var(--\*xs)); }
+.margin-x\3A 6\*xs { margin-right  : calc(var(--size\3A 6) * var(--\*xs)); margin-left   : calc(var(--size\3A 6) * var(--\*xs)); }
+.margin-x\3A 7\*xs { margin-right  : calc(var(--size\3A 7) * var(--\*xs)); margin-left   : calc(var(--size\3A 7) * var(--\*xs)); }
+.margin-x\3A 8\*xs { margin-right  : calc(var(--size\3A 8) * var(--\*xs)); margin-left   : calc(var(--size\3A 8) * var(--\*xs)); }
+.margin-x\3A 1\*sm { margin-right  : calc(var(--size\3A 1) * var(--\*sm)); margin-left   : calc(var(--size\3A 1) * var(--\*sm)); }
+.margin-x\3A 2\*sm { margin-right  : calc(var(--size\3A 2) * var(--\*sm)); margin-left   : calc(var(--size\3A 2) * var(--\*sm)); }
+.margin-x\3A 3\*sm { margin-right  : calc(var(--size\3A 3) * var(--\*sm)); margin-left   : calc(var(--size\3A 3) * var(--\*sm)); }
+.margin-x\3A 4\*sm { margin-right  : calc(var(--size\3A 4) * var(--\*sm)); margin-left   : calc(var(--size\3A 4) * var(--\*sm)); }
+.margin-x\3A 5\*sm { margin-right  : calc(var(--size\3A 5) * var(--\*sm)); margin-left   : calc(var(--size\3A 5) * var(--\*sm)); }
+.margin-x\3A 6\*sm { margin-right  : calc(var(--size\3A 6) * var(--\*sm)); margin-left   : calc(var(--size\3A 6) * var(--\*sm)); }
+.margin-x\3A 7\*sm { margin-right  : calc(var(--size\3A 7) * var(--\*sm)); margin-left   : calc(var(--size\3A 7) * var(--\*sm)); }
+.margin-x\3A 8\*sm { margin-right  : calc(var(--size\3A 8) * var(--\*sm)); margin-left   : calc(var(--size\3A 8) * var(--\*sm)); }
+.margin-x\3A 1\*md { margin-right  : calc(var(--size\3A 1) * var(--\*md)); margin-left   : calc(var(--size\3A 1) * var(--\*md)); }
+.margin-x\3A 2\*md { margin-right  : calc(var(--size\3A 2) * var(--\*md)); margin-left   : calc(var(--size\3A 2) * var(--\*md)); }
+.margin-x\3A 3\*md { margin-right  : calc(var(--size\3A 3) * var(--\*md)); margin-left   : calc(var(--size\3A 3) * var(--\*md)); }
+.margin-x\3A 4\*md { margin-right  : calc(var(--size\3A 4) * var(--\*md)); margin-left   : calc(var(--size\3A 4) * var(--\*md)); }
+.margin-x\3A 5\*md { margin-right  : calc(var(--size\3A 5) * var(--\*md)); margin-left   : calc(var(--size\3A 5) * var(--\*md)); }
+.margin-x\3A 6\*md { margin-right  : calc(var(--size\3A 6) * var(--\*md)); margin-left   : calc(var(--size\3A 6) * var(--\*md)); }
+.margin-x\3A 7\*md { margin-right  : calc(var(--size\3A 7) * var(--\*md)); margin-left   : calc(var(--size\3A 7) * var(--\*md)); }
+.margin-x\3A 8\*md { margin-right  : calc(var(--size\3A 8) * var(--\*md)); margin-left   : calc(var(--size\3A 8) * var(--\*md)); }
+.margin-x\3A 1\*lg { margin-right  : calc(var(--size\3A 1) * var(--\*lg)); margin-left   : calc(var(--size\3A 1) * var(--\*lg)); }
+.margin-x\3A 2\*lg { margin-right  : calc(var(--size\3A 2) * var(--\*lg)); margin-left   : calc(var(--size\3A 2) * var(--\*lg)); }
+.margin-x\3A 3\*lg { margin-right  : calc(var(--size\3A 3) * var(--\*lg)); margin-left   : calc(var(--size\3A 3) * var(--\*lg)); }
+.margin-x\3A 4\*lg { margin-right  : calc(var(--size\3A 4) * var(--\*lg)); margin-left   : calc(var(--size\3A 4) * var(--\*lg)); }
+.margin-x\3A 5\*lg { margin-right  : calc(var(--size\3A 5) * var(--\*lg)); margin-left   : calc(var(--size\3A 5) * var(--\*lg)); }
+.margin-x\3A 6\*lg { margin-right  : calc(var(--size\3A 6) * var(--\*lg)); margin-left   : calc(var(--size\3A 6) * var(--\*lg)); }
+.margin-x\3A 7\*lg { margin-right  : calc(var(--size\3A 7) * var(--\*lg)); margin-left   : calc(var(--size\3A 7) * var(--\*lg)); }
+.margin-x\3A 8\*lg { margin-right  : calc(var(--size\3A 8) * var(--\*lg)); margin-left   : calc(var(--size\3A 8) * var(--\*lg)); }
+.margin-x\3A 1\*xl { margin-right  : calc(var(--size\3A 1) * var(--\*xl)); margin-left   : calc(var(--size\3A 1) * var(--\*xl)); }
+.margin-x\3A 2\*xl { margin-right  : calc(var(--size\3A 2) * var(--\*xl)); margin-left   : calc(var(--size\3A 2) * var(--\*xl)); }
+.margin-x\3A 3\*xl { margin-right  : calc(var(--size\3A 3) * var(--\*xl)); margin-left   : calc(var(--size\3A 3) * var(--\*xl)); }
+.margin-x\3A 4\*xl { margin-right  : calc(var(--size\3A 4) * var(--\*xl)); margin-left   : calc(var(--size\3A 4) * var(--\*xl)); }
+.margin-x\3A 5\*xl { margin-right  : calc(var(--size\3A 5) * var(--\*xl)); margin-left   : calc(var(--size\3A 5) * var(--\*xl)); }
+.margin-x\3A 6\*xl { margin-right  : calc(var(--size\3A 6) * var(--\*xl)); margin-left   : calc(var(--size\3A 6) * var(--\*xl)); }
+.margin-x\3A 7\*xl { margin-right  : calc(var(--size\3A 7) * var(--\*xl)); margin-left   : calc(var(--size\3A 7) * var(--\*xl)); }
+.margin-x\3A 8\*xl { margin-right  : calc(var(--size\3A 8) * var(--\*xl)); margin-left   : calc(var(--size\3A 8) * var(--\*xl)); }
+.margin-t\3A 0     { margin-top    : 0                                   ; }
+.margin-t\3A 1     { margin-top    :      var(--size\3A 1)               ; }
+.margin-t\3A 2     { margin-top    :      var(--size\3A 2)               ; }
+.margin-t\3A 3     { margin-top    :      var(--size\3A 3)               ; }
+.margin-t\3A 4     { margin-top    :      var(--size\3A 4)               ; }
+.margin-t\3A 5     { margin-top    :      var(--size\3A 5)               ; }
+.margin-t\3A 6     { margin-top    :      var(--size\3A 6)               ; }
+.margin-t\3A 7     { margin-top    :      var(--size\3A 7)               ; }
+.margin-t\3A 8     { margin-top    :      var(--size\3A 8)               ; }
+.margin-t\3A 1\/xs { margin-top    : calc(var(--size\3A 1) * var(--\/xs)); }
+.margin-t\3A 2\/xs { margin-top    : calc(var(--size\3A 2) * var(--\/xs)); }
+.margin-t\3A 3\/xs { margin-top    : calc(var(--size\3A 3) * var(--\/xs)); }
+.margin-t\3A 4\/xs { margin-top    : calc(var(--size\3A 4) * var(--\/xs)); }
+.margin-t\3A 5\/xs { margin-top    : calc(var(--size\3A 5) * var(--\/xs)); }
+.margin-t\3A 6\/xs { margin-top    : calc(var(--size\3A 6) * var(--\/xs)); }
+.margin-t\3A 7\/xs { margin-top    : calc(var(--size\3A 7) * var(--\/xs)); }
+.margin-t\3A 8\/xs { margin-top    : calc(var(--size\3A 8) * var(--\/xs)); }
+.margin-t\3A 1\/sm { margin-top    : calc(var(--size\3A 1) * var(--\/sm)); }
+.margin-t\3A 2\/sm { margin-top    : calc(var(--size\3A 2) * var(--\/sm)); }
+.margin-t\3A 3\/sm { margin-top    : calc(var(--size\3A 3) * var(--\/sm)); }
+.margin-t\3A 4\/sm { margin-top    : calc(var(--size\3A 4) * var(--\/sm)); }
+.margin-t\3A 5\/sm { margin-top    : calc(var(--size\3A 5) * var(--\/sm)); }
+.margin-t\3A 6\/sm { margin-top    : calc(var(--size\3A 6) * var(--\/sm)); }
+.margin-t\3A 7\/sm { margin-top    : calc(var(--size\3A 7) * var(--\/sm)); }
+.margin-t\3A 8\/sm { margin-top    : calc(var(--size\3A 8) * var(--\/sm)); }
+.margin-t\3A 1\/md { margin-top    : calc(var(--size\3A 1) * var(--\/md)); }
+.margin-t\3A 2\/md { margin-top    : calc(var(--size\3A 2) * var(--\/md)); }
+.margin-t\3A 3\/md { margin-top    : calc(var(--size\3A 3) * var(--\/md)); }
+.margin-t\3A 4\/md { margin-top    : calc(var(--size\3A 4) * var(--\/md)); }
+.margin-t\3A 5\/md { margin-top    : calc(var(--size\3A 5) * var(--\/md)); }
+.margin-t\3A 6\/md { margin-top    : calc(var(--size\3A 6) * var(--\/md)); }
+.margin-t\3A 7\/md { margin-top    : calc(var(--size\3A 7) * var(--\/md)); }
+.margin-t\3A 8\/md { margin-top    : calc(var(--size\3A 8) * var(--\/md)); }
+.margin-t\3A 1\/lg { margin-top    : calc(var(--size\3A 1) * var(--\/lg)); }
+.margin-t\3A 2\/lg { margin-top    : calc(var(--size\3A 2) * var(--\/lg)); }
+.margin-t\3A 3\/lg { margin-top    : calc(var(--size\3A 3) * var(--\/lg)); }
+.margin-t\3A 4\/lg { margin-top    : calc(var(--size\3A 4) * var(--\/lg)); }
+.margin-t\3A 5\/lg { margin-top    : calc(var(--size\3A 5) * var(--\/lg)); }
+.margin-t\3A 6\/lg { margin-top    : calc(var(--size\3A 6) * var(--\/lg)); }
+.margin-t\3A 7\/lg { margin-top    : calc(var(--size\3A 7) * var(--\/lg)); }
+.margin-t\3A 8\/lg { margin-top    : calc(var(--size\3A 8) * var(--\/lg)); }
+.margin-t\3A 1\/xl { margin-top    : calc(var(--size\3A 1) * var(--\/xl)); }
+.margin-t\3A 2\/xl { margin-top    : calc(var(--size\3A 2) * var(--\/xl)); }
+.margin-t\3A 3\/xl { margin-top    : calc(var(--size\3A 3) * var(--\/xl)); }
+.margin-t\3A 4\/xl { margin-top    : calc(var(--size\3A 4) * var(--\/xl)); }
+.margin-t\3A 5\/xl { margin-top    : calc(var(--size\3A 5) * var(--\/xl)); }
+.margin-t\3A 6\/xl { margin-top    : calc(var(--size\3A 6) * var(--\/xl)); }
+.margin-t\3A 7\/xl { margin-top    : calc(var(--size\3A 7) * var(--\/xl)); }
+.margin-t\3A 8\/xl { margin-top    : calc(var(--size\3A 8) * var(--\/xl)); }
+.margin-t\3A 1\*xs { margin-top    : calc(var(--size\3A 1) * var(--\*xs)); }
+.margin-t\3A 2\*xs { margin-top    : calc(var(--size\3A 2) * var(--\*xs)); }
+.margin-t\3A 3\*xs { margin-top    : calc(var(--size\3A 3) * var(--\*xs)); }
+.margin-t\3A 4\*xs { margin-top    : calc(var(--size\3A 4) * var(--\*xs)); }
+.margin-t\3A 5\*xs { margin-top    : calc(var(--size\3A 5) * var(--\*xs)); }
+.margin-t\3A 6\*xs { margin-top    : calc(var(--size\3A 6) * var(--\*xs)); }
+.margin-t\3A 7\*xs { margin-top    : calc(var(--size\3A 7) * var(--\*xs)); }
+.margin-t\3A 8\*xs { margin-top    : calc(var(--size\3A 8) * var(--\*xs)); }
+.margin-t\3A 1\*sm { margin-top    : calc(var(--size\3A 1) * var(--\*sm)); }
+.margin-t\3A 2\*sm { margin-top    : calc(var(--size\3A 2) * var(--\*sm)); }
+.margin-t\3A 3\*sm { margin-top    : calc(var(--size\3A 3) * var(--\*sm)); }
+.margin-t\3A 4\*sm { margin-top    : calc(var(--size\3A 4) * var(--\*sm)); }
+.margin-t\3A 5\*sm { margin-top    : calc(var(--size\3A 5) * var(--\*sm)); }
+.margin-t\3A 6\*sm { margin-top    : calc(var(--size\3A 6) * var(--\*sm)); }
+.margin-t\3A 7\*sm { margin-top    : calc(var(--size\3A 7) * var(--\*sm)); }
+.margin-t\3A 8\*sm { margin-top    : calc(var(--size\3A 8) * var(--\*sm)); }
+.margin-t\3A 1\*md { margin-top    : calc(var(--size\3A 1) * var(--\*md)); }
+.margin-t\3A 2\*md { margin-top    : calc(var(--size\3A 2) * var(--\*md)); }
+.margin-t\3A 3\*md { margin-top    : calc(var(--size\3A 3) * var(--\*md)); }
+.margin-t\3A 4\*md { margin-top    : calc(var(--size\3A 4) * var(--\*md)); }
+.margin-t\3A 5\*md { margin-top    : calc(var(--size\3A 5) * var(--\*md)); }
+.margin-t\3A 6\*md { margin-top    : calc(var(--size\3A 6) * var(--\*md)); }
+.margin-t\3A 7\*md { margin-top    : calc(var(--size\3A 7) * var(--\*md)); }
+.margin-t\3A 8\*md { margin-top    : calc(var(--size\3A 8) * var(--\*md)); }
+.margin-t\3A 1\*lg { margin-top    : calc(var(--size\3A 1) * var(--\*lg)); }
+.margin-t\3A 2\*lg { margin-top    : calc(var(--size\3A 2) * var(--\*lg)); }
+.margin-t\3A 3\*lg { margin-top    : calc(var(--size\3A 3) * var(--\*lg)); }
+.margin-t\3A 4\*lg { margin-top    : calc(var(--size\3A 4) * var(--\*lg)); }
+.margin-t\3A 5\*lg { margin-top    : calc(var(--size\3A 5) * var(--\*lg)); }
+.margin-t\3A 6\*lg { margin-top    : calc(var(--size\3A 6) * var(--\*lg)); }
+.margin-t\3A 7\*lg { margin-top    : calc(var(--size\3A 7) * var(--\*lg)); }
+.margin-t\3A 8\*lg { margin-top    : calc(var(--size\3A 8) * var(--\*lg)); }
+.margin-t\3A 1\*xl { margin-top    : calc(var(--size\3A 1) * var(--\*xl)); }
+.margin-t\3A 2\*xl { margin-top    : calc(var(--size\3A 2) * var(--\*xl)); }
+.margin-t\3A 3\*xl { margin-top    : calc(var(--size\3A 3) * var(--\*xl)); }
+.margin-t\3A 4\*xl { margin-top    : calc(var(--size\3A 4) * var(--\*xl)); }
+.margin-t\3A 5\*xl { margin-top    : calc(var(--size\3A 5) * var(--\*xl)); }
+.margin-t\3A 6\*xl { margin-top    : calc(var(--size\3A 6) * var(--\*xl)); }
+.margin-t\3A 7\*xl { margin-top    : calc(var(--size\3A 7) * var(--\*xl)); }
+.margin-t\3A 8\*xl { margin-top    : calc(var(--size\3A 8) * var(--\*xl)); }
+.margin-r\3A 0     { margin-right  : 0                                   ; }
+.margin-r\3A 1     { margin-right  :      var(--size\3A 1)               ; }
+.margin-r\3A 2     { margin-right  :      var(--size\3A 2)               ; }
+.margin-r\3A 3     { margin-right  :      var(--size\3A 3)               ; }
+.margin-r\3A 4     { margin-right  :      var(--size\3A 4)               ; }
+.margin-r\3A 5     { margin-right  :      var(--size\3A 5)               ; }
+.margin-r\3A 6     { margin-right  :      var(--size\3A 6)               ; }
+.margin-r\3A 7     { margin-right  :      var(--size\3A 7)               ; }
+.margin-r\3A 8     { margin-right  :      var(--size\3A 8)               ; }
+.margin-r\3A 1\/xs { margin-right  : calc(var(--size\3A 1) * var(--\/xs)); }
+.margin-r\3A 2\/xs { margin-right  : calc(var(--size\3A 2) * var(--\/xs)); }
+.margin-r\3A 3\/xs { margin-right  : calc(var(--size\3A 3) * var(--\/xs)); }
+.margin-r\3A 4\/xs { margin-right  : calc(var(--size\3A 4) * var(--\/xs)); }
+.margin-r\3A 5\/xs { margin-right  : calc(var(--size\3A 5) * var(--\/xs)); }
+.margin-r\3A 6\/xs { margin-right  : calc(var(--size\3A 6) * var(--\/xs)); }
+.margin-r\3A 7\/xs { margin-right  : calc(var(--size\3A 7) * var(--\/xs)); }
+.margin-r\3A 8\/xs { margin-right  : calc(var(--size\3A 8) * var(--\/xs)); }
+.margin-r\3A 1\/sm { margin-right  : calc(var(--size\3A 1) * var(--\/sm)); }
+.margin-r\3A 2\/sm { margin-right  : calc(var(--size\3A 2) * var(--\/sm)); }
+.margin-r\3A 3\/sm { margin-right  : calc(var(--size\3A 3) * var(--\/sm)); }
+.margin-r\3A 4\/sm { margin-right  : calc(var(--size\3A 4) * var(--\/sm)); }
+.margin-r\3A 5\/sm { margin-right  : calc(var(--size\3A 5) * var(--\/sm)); }
+.margin-r\3A 6\/sm { margin-right  : calc(var(--size\3A 6) * var(--\/sm)); }
+.margin-r\3A 7\/sm { margin-right  : calc(var(--size\3A 7) * var(--\/sm)); }
+.margin-r\3A 8\/sm { margin-right  : calc(var(--size\3A 8) * var(--\/sm)); }
+.margin-r\3A 1\/md { margin-right  : calc(var(--size\3A 1) * var(--\/md)); }
+.margin-r\3A 2\/md { margin-right  : calc(var(--size\3A 2) * var(--\/md)); }
+.margin-r\3A 3\/md { margin-right  : calc(var(--size\3A 3) * var(--\/md)); }
+.margin-r\3A 4\/md { margin-right  : calc(var(--size\3A 4) * var(--\/md)); }
+.margin-r\3A 5\/md { margin-right  : calc(var(--size\3A 5) * var(--\/md)); }
+.margin-r\3A 6\/md { margin-right  : calc(var(--size\3A 6) * var(--\/md)); }
+.margin-r\3A 7\/md { margin-right  : calc(var(--size\3A 7) * var(--\/md)); }
+.margin-r\3A 8\/md { margin-right  : calc(var(--size\3A 8) * var(--\/md)); }
+.margin-r\3A 1\/lg { margin-right  : calc(var(--size\3A 1) * var(--\/lg)); }
+.margin-r\3A 2\/lg { margin-right  : calc(var(--size\3A 2) * var(--\/lg)); }
+.margin-r\3A 3\/lg { margin-right  : calc(var(--size\3A 3) * var(--\/lg)); }
+.margin-r\3A 4\/lg { margin-right  : calc(var(--size\3A 4) * var(--\/lg)); }
+.margin-r\3A 5\/lg { margin-right  : calc(var(--size\3A 5) * var(--\/lg)); }
+.margin-r\3A 6\/lg { margin-right  : calc(var(--size\3A 6) * var(--\/lg)); }
+.margin-r\3A 7\/lg { margin-right  : calc(var(--size\3A 7) * var(--\/lg)); }
+.margin-r\3A 8\/lg { margin-right  : calc(var(--size\3A 8) * var(--\/lg)); }
+.margin-r\3A 1\/xl { margin-right  : calc(var(--size\3A 1) * var(--\/xl)); }
+.margin-r\3A 2\/xl { margin-right  : calc(var(--size\3A 2) * var(--\/xl)); }
+.margin-r\3A 3\/xl { margin-right  : calc(var(--size\3A 3) * var(--\/xl)); }
+.margin-r\3A 4\/xl { margin-right  : calc(var(--size\3A 4) * var(--\/xl)); }
+.margin-r\3A 5\/xl { margin-right  : calc(var(--size\3A 5) * var(--\/xl)); }
+.margin-r\3A 6\/xl { margin-right  : calc(var(--size\3A 6) * var(--\/xl)); }
+.margin-r\3A 7\/xl { margin-right  : calc(var(--size\3A 7) * var(--\/xl)); }
+.margin-r\3A 8\/xl { margin-right  : calc(var(--size\3A 8) * var(--\/xl)); }
+.margin-r\3A 1\*xs { margin-right  : calc(var(--size\3A 1) * var(--\*xs)); }
+.margin-r\3A 2\*xs { margin-right  : calc(var(--size\3A 2) * var(--\*xs)); }
+.margin-r\3A 3\*xs { margin-right  : calc(var(--size\3A 3) * var(--\*xs)); }
+.margin-r\3A 4\*xs { margin-right  : calc(var(--size\3A 4) * var(--\*xs)); }
+.margin-r\3A 5\*xs { margin-right  : calc(var(--size\3A 5) * var(--\*xs)); }
+.margin-r\3A 6\*xs { margin-right  : calc(var(--size\3A 6) * var(--\*xs)); }
+.margin-r\3A 7\*xs { margin-right  : calc(var(--size\3A 7) * var(--\*xs)); }
+.margin-r\3A 8\*xs { margin-right  : calc(var(--size\3A 8) * var(--\*xs)); }
+.margin-r\3A 1\*sm { margin-right  : calc(var(--size\3A 1) * var(--\*sm)); }
+.margin-r\3A 2\*sm { margin-right  : calc(var(--size\3A 2) * var(--\*sm)); }
+.margin-r\3A 3\*sm { margin-right  : calc(var(--size\3A 3) * var(--\*sm)); }
+.margin-r\3A 4\*sm { margin-right  : calc(var(--size\3A 4) * var(--\*sm)); }
+.margin-r\3A 5\*sm { margin-right  : calc(var(--size\3A 5) * var(--\*sm)); }
+.margin-r\3A 6\*sm { margin-right  : calc(var(--size\3A 6) * var(--\*sm)); }
+.margin-r\3A 7\*sm { margin-right  : calc(var(--size\3A 7) * var(--\*sm)); }
+.margin-r\3A 8\*sm { margin-right  : calc(var(--size\3A 8) * var(--\*sm)); }
+.margin-r\3A 1\*md { margin-right  : calc(var(--size\3A 1) * var(--\*md)); }
+.margin-r\3A 2\*md { margin-right  : calc(var(--size\3A 2) * var(--\*md)); }
+.margin-r\3A 3\*md { margin-right  : calc(var(--size\3A 3) * var(--\*md)); }
+.margin-r\3A 4\*md { margin-right  : calc(var(--size\3A 4) * var(--\*md)); }
+.margin-r\3A 5\*md { margin-right  : calc(var(--size\3A 5) * var(--\*md)); }
+.margin-r\3A 6\*md { margin-right  : calc(var(--size\3A 6) * var(--\*md)); }
+.margin-r\3A 7\*md { margin-right  : calc(var(--size\3A 7) * var(--\*md)); }
+.margin-r\3A 8\*md { margin-right  : calc(var(--size\3A 8) * var(--\*md)); }
+.margin-r\3A 1\*lg { margin-right  : calc(var(--size\3A 1) * var(--\*lg)); }
+.margin-r\3A 2\*lg { margin-right  : calc(var(--size\3A 2) * var(--\*lg)); }
+.margin-r\3A 3\*lg { margin-right  : calc(var(--size\3A 3) * var(--\*lg)); }
+.margin-r\3A 4\*lg { margin-right  : calc(var(--size\3A 4) * var(--\*lg)); }
+.margin-r\3A 5\*lg { margin-right  : calc(var(--size\3A 5) * var(--\*lg)); }
+.margin-r\3A 6\*lg { margin-right  : calc(var(--size\3A 6) * var(--\*lg)); }
+.margin-r\3A 7\*lg { margin-right  : calc(var(--size\3A 7) * var(--\*lg)); }
+.margin-r\3A 8\*lg { margin-right  : calc(var(--size\3A 8) * var(--\*lg)); }
+.margin-r\3A 1\*xl { margin-right  : calc(var(--size\3A 1) * var(--\*xl)); }
+.margin-r\3A 2\*xl { margin-right  : calc(var(--size\3A 2) * var(--\*xl)); }
+.margin-r\3A 3\*xl { margin-right  : calc(var(--size\3A 3) * var(--\*xl)); }
+.margin-r\3A 4\*xl { margin-right  : calc(var(--size\3A 4) * var(--\*xl)); }
+.margin-r\3A 5\*xl { margin-right  : calc(var(--size\3A 5) * var(--\*xl)); }
+.margin-r\3A 6\*xl { margin-right  : calc(var(--size\3A 6) * var(--\*xl)); }
+.margin-r\3A 7\*xl { margin-right  : calc(var(--size\3A 7) * var(--\*xl)); }
+.margin-r\3A 8\*xl { margin-right  : calc(var(--size\3A 8) * var(--\*xl)); }
+.margin-b\3A 0     { margin-bottom : 0                                   ; }
+.margin-b\3A 1     { margin-bottom :      var(--size\3A 1)               ; }
+.margin-b\3A 2     { margin-bottom :      var(--size\3A 2)               ; }
+.margin-b\3A 3     { margin-bottom :      var(--size\3A 3)               ; }
+.margin-b\3A 4     { margin-bottom :      var(--size\3A 4)               ; }
+.margin-b\3A 5     { margin-bottom :      var(--size\3A 5)               ; }
+.margin-b\3A 6     { margin-bottom :      var(--size\3A 6)               ; }
+.margin-b\3A 7     { margin-bottom :      var(--size\3A 7)               ; }
+.margin-b\3A 8     { margin-bottom :      var(--size\3A 8)               ; }
+.margin-b\3A 1\/xs { margin-bottom : calc(var(--size\3A 1) * var(--\/xs)); }
+.margin-b\3A 2\/xs { margin-bottom : calc(var(--size\3A 2) * var(--\/xs)); }
+.margin-b\3A 3\/xs { margin-bottom : calc(var(--size\3A 3) * var(--\/xs)); }
+.margin-b\3A 4\/xs { margin-bottom : calc(var(--size\3A 4) * var(--\/xs)); }
+.margin-b\3A 5\/xs { margin-bottom : calc(var(--size\3A 5) * var(--\/xs)); }
+.margin-b\3A 6\/xs { margin-bottom : calc(var(--size\3A 6) * var(--\/xs)); }
+.margin-b\3A 7\/xs { margin-bottom : calc(var(--size\3A 7) * var(--\/xs)); }
+.margin-b\3A 8\/xs { margin-bottom : calc(var(--size\3A 8) * var(--\/xs)); }
+.margin-b\3A 1\/sm { margin-bottom : calc(var(--size\3A 1) * var(--\/sm)); }
+.margin-b\3A 2\/sm { margin-bottom : calc(var(--size\3A 2) * var(--\/sm)); }
+.margin-b\3A 3\/sm { margin-bottom : calc(var(--size\3A 3) * var(--\/sm)); }
+.margin-b\3A 4\/sm { margin-bottom : calc(var(--size\3A 4) * var(--\/sm)); }
+.margin-b\3A 5\/sm { margin-bottom : calc(var(--size\3A 5) * var(--\/sm)); }
+.margin-b\3A 6\/sm { margin-bottom : calc(var(--size\3A 6) * var(--\/sm)); }
+.margin-b\3A 7\/sm { margin-bottom : calc(var(--size\3A 7) * var(--\/sm)); }
+.margin-b\3A 8\/sm { margin-bottom : calc(var(--size\3A 8) * var(--\/sm)); }
+.margin-b\3A 1\/md { margin-bottom : calc(var(--size\3A 1) * var(--\/md)); }
+.margin-b\3A 2\/md { margin-bottom : calc(var(--size\3A 2) * var(--\/md)); }
+.margin-b\3A 3\/md { margin-bottom : calc(var(--size\3A 3) * var(--\/md)); }
+.margin-b\3A 4\/md { margin-bottom : calc(var(--size\3A 4) * var(--\/md)); }
+.margin-b\3A 5\/md { margin-bottom : calc(var(--size\3A 5) * var(--\/md)); }
+.margin-b\3A 6\/md { margin-bottom : calc(var(--size\3A 6) * var(--\/md)); }
+.margin-b\3A 7\/md { margin-bottom : calc(var(--size\3A 7) * var(--\/md)); }
+.margin-b\3A 8\/md { margin-bottom : calc(var(--size\3A 8) * var(--\/md)); }
+.margin-b\3A 1\/lg { margin-bottom : calc(var(--size\3A 1) * var(--\/lg)); }
+.margin-b\3A 2\/lg { margin-bottom : calc(var(--size\3A 2) * var(--\/lg)); }
+.margin-b\3A 3\/lg { margin-bottom : calc(var(--size\3A 3) * var(--\/lg)); }
+.margin-b\3A 4\/lg { margin-bottom : calc(var(--size\3A 4) * var(--\/lg)); }
+.margin-b\3A 5\/lg { margin-bottom : calc(var(--size\3A 5) * var(--\/lg)); }
+.margin-b\3A 6\/lg { margin-bottom : calc(var(--size\3A 6) * var(--\/lg)); }
+.margin-b\3A 7\/lg { margin-bottom : calc(var(--size\3A 7) * var(--\/lg)); }
+.margin-b\3A 8\/lg { margin-bottom : calc(var(--size\3A 8) * var(--\/lg)); }
+.margin-b\3A 1\/xl { margin-bottom : calc(var(--size\3A 1) * var(--\/xl)); }
+.margin-b\3A 2\/xl { margin-bottom : calc(var(--size\3A 2) * var(--\/xl)); }
+.margin-b\3A 3\/xl { margin-bottom : calc(var(--size\3A 3) * var(--\/xl)); }
+.margin-b\3A 4\/xl { margin-bottom : calc(var(--size\3A 4) * var(--\/xl)); }
+.margin-b\3A 5\/xl { margin-bottom : calc(var(--size\3A 5) * var(--\/xl)); }
+.margin-b\3A 6\/xl { margin-bottom : calc(var(--size\3A 6) * var(--\/xl)); }
+.margin-b\3A 7\/xl { margin-bottom : calc(var(--size\3A 7) * var(--\/xl)); }
+.margin-b\3A 8\/xl { margin-bottom : calc(var(--size\3A 8) * var(--\/xl)); }
+.margin-b\3A 1\*xs { margin-bottom : calc(var(--size\3A 1) * var(--\*xs)); }
+.margin-b\3A 2\*xs { margin-bottom : calc(var(--size\3A 2) * var(--\*xs)); }
+.margin-b\3A 3\*xs { margin-bottom : calc(var(--size\3A 3) * var(--\*xs)); }
+.margin-b\3A 4\*xs { margin-bottom : calc(var(--size\3A 4) * var(--\*xs)); }
+.margin-b\3A 5\*xs { margin-bottom : calc(var(--size\3A 5) * var(--\*xs)); }
+.margin-b\3A 6\*xs { margin-bottom : calc(var(--size\3A 6) * var(--\*xs)); }
+.margin-b\3A 7\*xs { margin-bottom : calc(var(--size\3A 7) * var(--\*xs)); }
+.margin-b\3A 8\*xs { margin-bottom : calc(var(--size\3A 8) * var(--\*xs)); }
+.margin-b\3A 1\*sm { margin-bottom : calc(var(--size\3A 1) * var(--\*sm)); }
+.margin-b\3A 2\*sm { margin-bottom : calc(var(--size\3A 2) * var(--\*sm)); }
+.margin-b\3A 3\*sm { margin-bottom : calc(var(--size\3A 3) * var(--\*sm)); }
+.margin-b\3A 4\*sm { margin-bottom : calc(var(--size\3A 4) * var(--\*sm)); }
+.margin-b\3A 5\*sm { margin-bottom : calc(var(--size\3A 5) * var(--\*sm)); }
+.margin-b\3A 6\*sm { margin-bottom : calc(var(--size\3A 6) * var(--\*sm)); }
+.margin-b\3A 7\*sm { margin-bottom : calc(var(--size\3A 7) * var(--\*sm)); }
+.margin-b\3A 8\*sm { margin-bottom : calc(var(--size\3A 8) * var(--\*sm)); }
+.margin-b\3A 1\*md { margin-bottom : calc(var(--size\3A 1) * var(--\*md)); }
+.margin-b\3A 2\*md { margin-bottom : calc(var(--size\3A 2) * var(--\*md)); }
+.margin-b\3A 3\*md { margin-bottom : calc(var(--size\3A 3) * var(--\*md)); }
+.margin-b\3A 4\*md { margin-bottom : calc(var(--size\3A 4) * var(--\*md)); }
+.margin-b\3A 5\*md { margin-bottom : calc(var(--size\3A 5) * var(--\*md)); }
+.margin-b\3A 6\*md { margin-bottom : calc(var(--size\3A 6) * var(--\*md)); }
+.margin-b\3A 7\*md { margin-bottom : calc(var(--size\3A 7) * var(--\*md)); }
+.margin-b\3A 8\*md { margin-bottom : calc(var(--size\3A 8) * var(--\*md)); }
+.margin-b\3A 1\*lg { margin-bottom : calc(var(--size\3A 1) * var(--\*lg)); }
+.margin-b\3A 2\*lg { margin-bottom : calc(var(--size\3A 2) * var(--\*lg)); }
+.margin-b\3A 3\*lg { margin-bottom : calc(var(--size\3A 3) * var(--\*lg)); }
+.margin-b\3A 4\*lg { margin-bottom : calc(var(--size\3A 4) * var(--\*lg)); }
+.margin-b\3A 5\*lg { margin-bottom : calc(var(--size\3A 5) * var(--\*lg)); }
+.margin-b\3A 6\*lg { margin-bottom : calc(var(--size\3A 6) * var(--\*lg)); }
+.margin-b\3A 7\*lg { margin-bottom : calc(var(--size\3A 7) * var(--\*lg)); }
+.margin-b\3A 8\*lg { margin-bottom : calc(var(--size\3A 8) * var(--\*lg)); }
+.margin-b\3A 1\*xl { margin-bottom : calc(var(--size\3A 1) * var(--\*xl)); }
+.margin-b\3A 2\*xl { margin-bottom : calc(var(--size\3A 2) * var(--\*xl)); }
+.margin-b\3A 3\*xl { margin-bottom : calc(var(--size\3A 3) * var(--\*xl)); }
+.margin-b\3A 4\*xl { margin-bottom : calc(var(--size\3A 4) * var(--\*xl)); }
+.margin-b\3A 5\*xl { margin-bottom : calc(var(--size\3A 5) * var(--\*xl)); }
+.margin-b\3A 6\*xl { margin-bottom : calc(var(--size\3A 6) * var(--\*xl)); }
+.margin-b\3A 7\*xl { margin-bottom : calc(var(--size\3A 7) * var(--\*xl)); }
+.margin-b\3A 8\*xl { margin-bottom : calc(var(--size\3A 8) * var(--\*xl)); }
+.margin-l\3A 0     { margin-left   : 0                                   ; }
+.margin-l\3A 1     { margin-left   :      var(--size\3A 1)               ; }
+.margin-l\3A 2     { margin-left   :      var(--size\3A 2)               ; }
+.margin-l\3A 3     { margin-left   :      var(--size\3A 3)               ; }
+.margin-l\3A 4     { margin-left   :      var(--size\3A 4)               ; }
+.margin-l\3A 5     { margin-left   :      var(--size\3A 5)               ; }
+.margin-l\3A 6     { margin-left   :      var(--size\3A 6)               ; }
+.margin-l\3A 7     { margin-left   :      var(--size\3A 7)               ; }
+.margin-l\3A 8     { margin-left   :      var(--size\3A 8)               ; }
+.margin-l\3A 1\/xs { margin-left   : calc(var(--size\3A 1) * var(--\/xs)); }
+.margin-l\3A 2\/xs { margin-left   : calc(var(--size\3A 2) * var(--\/xs)); }
+.margin-l\3A 3\/xs { margin-left   : calc(var(--size\3A 3) * var(--\/xs)); }
+.margin-l\3A 4\/xs { margin-left   : calc(var(--size\3A 4) * var(--\/xs)); }
+.margin-l\3A 5\/xs { margin-left   : calc(var(--size\3A 5) * var(--\/xs)); }
+.margin-l\3A 6\/xs { margin-left   : calc(var(--size\3A 6) * var(--\/xs)); }
+.margin-l\3A 7\/xs { margin-left   : calc(var(--size\3A 7) * var(--\/xs)); }
+.margin-l\3A 8\/xs { margin-left   : calc(var(--size\3A 8) * var(--\/xs)); }
+.margin-l\3A 1\/sm { margin-left   : calc(var(--size\3A 1) * var(--\/sm)); }
+.margin-l\3A 2\/sm { margin-left   : calc(var(--size\3A 2) * var(--\/sm)); }
+.margin-l\3A 3\/sm { margin-left   : calc(var(--size\3A 3) * var(--\/sm)); }
+.margin-l\3A 4\/sm { margin-left   : calc(var(--size\3A 4) * var(--\/sm)); }
+.margin-l\3A 5\/sm { margin-left   : calc(var(--size\3A 5) * var(--\/sm)); }
+.margin-l\3A 6\/sm { margin-left   : calc(var(--size\3A 6) * var(--\/sm)); }
+.margin-l\3A 7\/sm { margin-left   : calc(var(--size\3A 7) * var(--\/sm)); }
+.margin-l\3A 8\/sm { margin-left   : calc(var(--size\3A 8) * var(--\/sm)); }
+.margin-l\3A 1\/md { margin-left   : calc(var(--size\3A 1) * var(--\/md)); }
+.margin-l\3A 2\/md { margin-left   : calc(var(--size\3A 2) * var(--\/md)); }
+.margin-l\3A 3\/md { margin-left   : calc(var(--size\3A 3) * var(--\/md)); }
+.margin-l\3A 4\/md { margin-left   : calc(var(--size\3A 4) * var(--\/md)); }
+.margin-l\3A 5\/md { margin-left   : calc(var(--size\3A 5) * var(--\/md)); }
+.margin-l\3A 6\/md { margin-left   : calc(var(--size\3A 6) * var(--\/md)); }
+.margin-l\3A 7\/md { margin-left   : calc(var(--size\3A 7) * var(--\/md)); }
+.margin-l\3A 8\/md { margin-left   : calc(var(--size\3A 8) * var(--\/md)); }
+.margin-l\3A 1\/lg { margin-left   : calc(var(--size\3A 1) * var(--\/lg)); }
+.margin-l\3A 2\/lg { margin-left   : calc(var(--size\3A 2) * var(--\/lg)); }
+.margin-l\3A 3\/lg { margin-left   : calc(var(--size\3A 3) * var(--\/lg)); }
+.margin-l\3A 4\/lg { margin-left   : calc(var(--size\3A 4) * var(--\/lg)); }
+.margin-l\3A 5\/lg { margin-left   : calc(var(--size\3A 5) * var(--\/lg)); }
+.margin-l\3A 6\/lg { margin-left   : calc(var(--size\3A 6) * var(--\/lg)); }
+.margin-l\3A 7\/lg { margin-left   : calc(var(--size\3A 7) * var(--\/lg)); }
+.margin-l\3A 8\/lg { margin-left   : calc(var(--size\3A 8) * var(--\/lg)); }
+.margin-l\3A 1\*sm { margin-left   : calc(var(--size\3A 1) * var(--\*sm)); }
+.margin-l\3A 2\*sm { margin-left   : calc(var(--size\3A 2) * var(--\*sm)); }
+.margin-l\3A 3\*sm { margin-left   : calc(var(--size\3A 3) * var(--\*sm)); }
+.margin-l\3A 4\*sm { margin-left   : calc(var(--size\3A 4) * var(--\*sm)); }
+.margin-l\3A 5\*sm { margin-left   : calc(var(--size\3A 5) * var(--\*sm)); }
+.margin-l\3A 6\*sm { margin-left   : calc(var(--size\3A 6) * var(--\*sm)); }
+.margin-l\3A 7\*sm { margin-left   : calc(var(--size\3A 7) * var(--\*sm)); }
+.margin-l\3A 8\*sm { margin-left   : calc(var(--size\3A 8) * var(--\*sm)); }
+.margin-l\3A 1\*md { margin-left   : calc(var(--size\3A 1) * var(--\*md)); }
+.margin-l\3A 2\*md { margin-left   : calc(var(--size\3A 2) * var(--\*md)); }
+.margin-l\3A 3\*md { margin-left   : calc(var(--size\3A 3) * var(--\*md)); }
+.margin-l\3A 4\*md { margin-left   : calc(var(--size\3A 4) * var(--\*md)); }
+.margin-l\3A 5\*md { margin-left   : calc(var(--size\3A 5) * var(--\*md)); }
+.margin-l\3A 6\*md { margin-left   : calc(var(--size\3A 6) * var(--\*md)); }
+.margin-l\3A 7\*md { margin-left   : calc(var(--size\3A 7) * var(--\*md)); }
+.margin-l\3A 8\*md { margin-left   : calc(var(--size\3A 8) * var(--\*md)); }
+.margin-l\3A 1\*lg { margin-left   : calc(var(--size\3A 1) * var(--\*lg)); }
+.margin-l\3A 2\*lg { margin-left   : calc(var(--size\3A 2) * var(--\*lg)); }
+.margin-l\3A 3\*lg { margin-left   : calc(var(--size\3A 3) * var(--\*lg)); }
+.margin-l\3A 4\*lg { margin-left   : calc(var(--size\3A 4) * var(--\*lg)); }
+.margin-l\3A 5\*lg { margin-left   : calc(var(--size\3A 5) * var(--\*lg)); }
+.margin-l\3A 6\*lg { margin-left   : calc(var(--size\3A 6) * var(--\*lg)); }
+.margin-l\3A 7\*lg { margin-left   : calc(var(--size\3A 7) * var(--\*lg)); }
+.margin-l\3A 8\*lg { margin-left   : calc(var(--size\3A 8) * var(--\*lg)); }
+.margin-l\3A 1\*xl { margin-left   : calc(var(--size\3A 1) * var(--\*xl)); }
+.margin-l\3A 2\*xl { margin-left   : calc(var(--size\3A 2) * var(--\*xl)); }
+.margin-l\3A 3\*xl { margin-left   : calc(var(--size\3A 3) * var(--\*xl)); }
+.margin-l\3A 4\*xl { margin-left   : calc(var(--size\3A 4) * var(--\*xl)); }
+.margin-l\3A 5\*xl { margin-left   : calc(var(--size\3A 5) * var(--\*xl)); }
+.margin-l\3A 6\*xl { margin-left   : calc(var(--size\3A 6) * var(--\*xl)); }
+.margin-l\3A 7\*xl { margin-left   : calc(var(--size\3A 7) * var(--\*xl)); }
+.margin-l\3A 8\*xl { margin-left   : calc(var(--size\3A 8) * var(--\*xl)); }

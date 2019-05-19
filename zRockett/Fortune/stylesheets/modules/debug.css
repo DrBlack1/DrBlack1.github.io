@@ -1,0 +1,15 @@
+[debug],
+[debug] * {
+	--debug-color         : hsla(210, 100%, 100%, 0.9);
+	--debug-background    : hsla(210, 100%,  50%, 0.5);
+	--debug-outline-color : hsla(210, 100%, 100%, 0.5);
+
+	color      :               var(--debug-color        ) !important;
+	background :               var(--debug-background   ) !important;
+	outline    : solid 0.25rem var(--debug-outline-color) !important;
+
+	box-shadow: none !important;
+}
+
+[debug][center], [debug][center] * { outline-offset: -0.125rem; }
+[debug][inside], [debug][inside] * { outline-offset: -0.250rem; }

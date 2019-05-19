@@ -1,0 +1,35 @@
+.border-radius\3A xs   { border-radius        : calc(1rem * var(--\/xs)); }
+.border-radius\3A sm   { border-radius        : calc(1rem * var(--\/sm)); }
+.border-radius\3A md   { border-radius        : calc(1rem * var(--\/md)); }
+.border-radius\3A lg   { border-radius        : calc(1rem * var(--\/lg)); }
+.border-radius\3A xl   { border-radius        : calc(1rem * var(--\/xl)); }
+.border-radius-y\3A xs { border-radius-top    : calc(1rem * var(--\/xs)); border-radius-bottom : calc(1rem * var(--xs)); }
+.border-radius-y\3A sm { border-radius-top    : calc(1rem * var(--\/sm)); border-radius-bottom : calc(1rem * var(--\/sm)); }
+.border-radius-y\3A md { border-radius-top    : calc(1rem * var(--\/md)); border-radius-bottom : calc(1rem * var(--\/md)); }
+.border-radius-y\3A lg { border-radius-top    : calc(1rem * var(--\/lg)); border-radius-bottom : calc(1rem * var(--\/lg)); }
+.border-radius-y\3A xl { border-radius-top    : calc(1rem * var(--\/xl)); border-radius-bottom : calc(1rem * var(--\/xl)); }
+.border-radius-x\3A xs { border-radius-right  : calc(1rem * var(--\/xs)); border-radius-left   : calc(1rem * var(--\/xs)); }
+.border-radius-x\3A sm { border-radius-right  : calc(1rem * var(--\/sm)); border-radius-left   : calc(1rem * var(--\/sm)); }
+.border-radius-x\3A md { border-radius-right  : calc(1rem * var(--\/md)); border-radius-left   : calc(1rem * var(--\/md)); }
+.border-radius-x\3A lg { border-radius-right  : calc(1rem * var(--\/lg)); border-radius-left   : calc(1rem * var(--\/lg)); }
+.border-radius-x\3A xl { border-radius-right  : calc(1rem * var(--\/xl)); border-radius-left   : calc(1rem * var(--\/xl)); }
+.border-radius-t\3A xs { border-radius-top    : calc(1rem * var(--\/xs)); }
+.border-radius-t\3A sm { border-radius-top    : calc(1rem * var(--\/sm)); }
+.border-radius-t\3A md { border-radius-top    : calc(1rem * var(--\/md)); }
+.border-radius-t\3A lg { border-radius-top    : calc(1rem * var(--\/lg)); }
+.border-radius-t\3A xl { border-radius-top    : calc(1rem * var(--\/xl)); }
+.border-radius-r\3A xs { border-radius-right  : calc(1rem * var(--\/xs)); }
+.border-radius-r\3A sm { border-radius-right  : calc(1rem * var(--\/sm)); }
+.border-radius-r\3A md { border-radius-right  : calc(1rem * var(--\/md)); }
+.border-radius-r\3A lg { border-radius-right  : calc(1rem * var(--\/lg)); }
+.border-radius-r\3A xl { border-radius-right  : calc(1rem * var(--\/xl)); }
+.border-radius-b\3A xs { border-radius-bottom : calc(1rem * var(--\/xs)); }
+.border-radius-b\3A sm { border-radius-bottom : calc(1rem * var(--\/sm)); }
+.border-radius-b\3A md { border-radius-bottom : calc(1rem * var(--\/md)); }
+.border-radius-b\3A lg { border-radius-bottom : calc(1rem * var(--\/lg)); }
+.border-radius-b\3A xl { border-radius-bottom : calc(1rem * var(--\/xl)); }
+.border-radius-l\3A xs { border-radius-left   : calc(1rem * var(--\/xs)); }
+.border-radius-l\3A sm { border-radius-left   : calc(1rem * var(--\/sm)); }
+.border-radius-l\3A md { border-radius-left   : calc(1rem * var(--\/md)); }
+.border-radius-l\3A lg { border-radius-left   : calc(1rem * var(--\/lg)); }
+.border-radius-l\3A xl { border-radius-left   : calc(1rem * var(--\/xl)); }

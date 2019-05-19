@@ -1,0 +1,13 @@
+.flex {
+	display: flex;
+}
+
+.flex\3A top-left     { display: flex; justify-content: flex-start; align-items: flex-start; }
+.flex\3A top          { display: flex; justify-content: center    ; align-items: flex-start; }
+.flex\3A top-right    { display: flex; justify-content: flex-end  ; align-items: flex-start; }
+.flex\3A left         { display: flex; justify-content: flex-start; align-items: center    ; }
+.flex\3A center       { display: flex; justify-content: center    ; align-items: center    ; }
+.flex\3A right        { display: flex; justify-content: flex-end  ; align-items: center    ; }
+.flex\3A bottom-left  { display: flex; justify-content: flex-start; align-items: flex-end  ; }
+.flex\3A bottom       { display: flex; justify-content: center    ; align-items: flex-end  ; }
+.flex\3A bottom-right { display: flex; justify-content: flex-end  ; align-items: flex-end  ; }

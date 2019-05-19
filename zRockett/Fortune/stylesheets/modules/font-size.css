@@ -1,0 +1,99 @@
+.font-size\3A 1     { font-size:      var(--size\3A 1)               ; }
+.font-size\3A 2     { font-size:      var(--size\3A 2)               ; }
+.font-size\3A 3     { font-size:      var(--size\3A 3)               ; }
+.font-size\3A 4     { font-size:      var(--size\3A 4)               ; }
+.font-size\3A 5     { font-size:      var(--size\3A 5)               ; }
+.font-size\3A 6     { font-size:      var(--size\3A 6)               ; }
+.font-size\3A 7     { font-size:      var(--size\3A 7)               ; }
+.font-size\3A 8     { font-size:      var(--size\3A 8)               ; }
+.font-size\3A 1\/xs { font-size: calc(var(--size\3A 1) * var(--\/xs)); }
+.font-size\3A 2\/xs { font-size: calc(var(--size\3A 2) * var(--\/xs)); }
+.font-size\3A 3\/xs { font-size: calc(var(--size\3A 3) * var(--\/xs)); }
+.font-size\3A 4\/xs { font-size: calc(var(--size\3A 4) * var(--\/xs)); }
+.font-size\3A 5\/xs { font-size: calc(var(--size\3A 5) * var(--\/xs)); }
+.font-size\3A 6\/xs { font-size: calc(var(--size\3A 6) * var(--\/xs)); }
+.font-size\3A 7\/xs { font-size: calc(var(--size\3A 7) * var(--\/xs)); }
+.font-size\3A 8\/xs { font-size: calc(var(--size\3A 8) * var(--\/xs)); }
+.font-size\3A 1\/sm { font-size: calc(var(--size\3A 1) * var(--\/sm)); }
+.font-size\3A 2\/sm { font-size: calc(var(--size\3A 2) * var(--\/sm)); }
+.font-size\3A 3\/sm { font-size: calc(var(--size\3A 3) * var(--\/sm)); }
+.font-size\3A 4\/sm { font-size: calc(var(--size\3A 4) * var(--\/sm)); }
+.font-size\3A 5\/sm { font-size: calc(var(--size\3A 5) * var(--\/sm)); }
+.font-size\3A 6\/sm { font-size: calc(var(--size\3A 6) * var(--\/sm)); }
+.font-size\3A 7\/sm { font-size: calc(var(--size\3A 7) * var(--\/sm)); }
+.font-size\3A 8\/sm { font-size: calc(var(--size\3A 8) * var(--\/sm)); }
+.font-size\3A 1\/md { font-size: calc(var(--size\3A 1) * var(--\/md)); }
+.font-size\3A 2\/md { font-size: calc(var(--size\3A 2) * var(--\/md)); }
+.font-size\3A 3\/md { font-size: calc(var(--size\3A 3) * var(--\/md)); }
+.font-size\3A 4\/md { font-size: calc(var(--size\3A 4) * var(--\/md)); }
+.font-size\3A 5\/md { font-size: calc(var(--size\3A 5) * var(--\/md)); }
+.font-size\3A 6\/md { font-size: calc(var(--size\3A 6) * var(--\/md)); }
+.font-size\3A 7\/md { font-size: calc(var(--size\3A 7) * var(--\/md)); }
+.font-size\3A 8\/md { font-size: calc(var(--size\3A 8) * var(--\/md)); }
+.font-size\3A 1\/lg { font-size: calc(var(--size\3A 1) * var(--\/lg)); }
+.font-size\3A 2\/lg { font-size: calc(var(--size\3A 2) * var(--\/lg)); }
+.font-size\3A 3\/lg { font-size: calc(var(--size\3A 3) * var(--\/lg)); }
+.font-size\3A 4\/lg { font-size: calc(var(--size\3A 4) * var(--\/lg)); }
+.font-size\3A 5\/lg { font-size: calc(var(--size\3A 5) * var(--\/lg)); }
+.font-size\3A 6\/lg { font-size: calc(var(--size\3A 6) * var(--\/lg)); }
+.font-size\3A 7\/lg { font-size: calc(var(--size\3A 7) * var(--\/lg)); }
+.font-size\3A 8\/lg { font-size: calc(var(--size\3A 8) * var(--\/lg)); }
+.font-size\3A 1\/xl { font-size: calc(var(--size\3A 1) * var(--\/xl)); }
+.font-size\3A 2\/xl { font-size: calc(var(--size\3A 2) * var(--\/xl)); }
+.font-size\3A 3\/xl { font-size: calc(var(--size\3A 3) * var(--\/xl)); }
+.font-size\3A 4\/xl { font-size: calc(var(--size\3A 4) * var(--\/xl)); }
+.font-size\3A 5\/xl { font-size: calc(var(--size\3A 5) * var(--\/xl)); }
+.font-size\3A 6\/xl { font-size: calc(var(--size\3A 6) * var(--\/xl)); }
+.font-size\3A 7\/xl { font-size: calc(var(--size\3A 7) * var(--\/xl)); }
+.font-size\3A 8\/xl { font-size: calc(var(--size\3A 8) * var(--\/xl)); }
+.font-size\3A 1\*xs { font-size: calc(var(--size\3A 1) * var(--\*xs)); }
+.font-size\3A 2\*xs { font-size: calc(var(--size\3A 2) * var(--\*xs)); }
+.font-size\3A 3\*xs { font-size: calc(var(--size\3A 3) * var(--\*xs)); }
+.font-size\3A 4\*xs { font-size: calc(var(--size\3A 4) * var(--\*xs)); }
+.font-size\3A 5\*xs { font-size: calc(var(--size\3A 5) * var(--\*xs)); }
+.font-size\3A 6\*xs { font-size: calc(var(--size\3A 6) * var(--\*xs)); }
+.font-size\3A 7\*xs { font-size: calc(var(--size\3A 7) * var(--\*xs)); }
+.font-size\3A 8\*xs { font-size: calc(var(--size\3A 8) * var(--\*xs)); }
+.font-size\3A 1\*sm { font-size: calc(var(--size\3A 1) * var(--\*sm)); }
+.font-size\3A 2\*sm { font-size: calc(var(--size\3A 2) * var(--\*sm)); }
+.font-size\3A 3\*sm { font-size: calc(var(--size\3A 3) * var(--\*sm)); }
+.font-size\3A 4\*sm { font-size: calc(var(--size\3A 4) * var(--\*sm)); }
+.font-size\3A 5\*sm { font-size: calc(var(--size\3A 5) * var(--\*sm)); }
+.font-size\3A 6\*sm { font-size: calc(var(--size\3A 6) * var(--\*sm)); }
+.font-size\3A 7\*sm { font-size: calc(var(--size\3A 7) * var(--\*sm)); }
+.font-size\3A 8\*sm { font-size: calc(var(--size\3A 8) * var(--\*sm)); }
+.font-size\3A 1\*md { font-size: calc(var(--size\3A 1) * var(--\*md)); }
+.font-size\3A 2\*md { font-size: calc(var(--size\3A 2) * var(--\*md)); }
+.font-size\3A 3\*md { font-size: calc(var(--size\3A 3) * var(--\*md)); }
+.font-size\3A 4\*md { font-size: calc(var(--size\3A 4) * var(--\*md)); }
+.font-size\3A 5\*md { font-size: calc(var(--size\3A 5) * var(--\*md)); }
+.font-size\3A 6\*md { font-size: calc(var(--size\3A 6) * var(--\*md)); }
+.font-size\3A 7\*md { font-size: calc(var(--size\3A 7) * var(--\*md)); }
+.font-size\3A 8\*md { font-size: calc(var(--size\3A 8) * var(--\*md)); }
+.font-size\3A 1\*lg { font-size: calc(var(--size\3A 1) * var(--\*lg)); }
+.font-size\3A 2\*lg { font-size: calc(var(--size\3A 2) * var(--\*lg)); }
+.font-size\3A 3\*lg { font-size: calc(var(--size\3A 3) * var(--\*lg)); }
+.font-size\3A 4\*lg { font-size: calc(var(--size\3A 4) * var(--\*lg)); }
+.font-size\3A 5\*lg { font-size: calc(var(--size\3A 5) * var(--\*lg)); }
+.font-size\3A 6\*lg { font-size: calc(var(--size\3A 6) * var(--\*lg)); }
+.font-size\3A 7\*lg { font-size: calc(var(--size\3A 7) * var(--\*lg)); }
+.font-size\3A 8\*lg { font-size: calc(var(--size\3A 8) * var(--\*lg)); }
+.font-size\3A 1\*xl { font-size: calc(var(--size\3A 1) * var(--\*xl)); }
+.font-size\3A 2\*xl { font-size: calc(var(--size\3A 2) * var(--\*xl)); }
+.font-size\3A 3\*xl { font-size: calc(var(--size\3A 3) * var(--\*xl)); }
+.font-size\3A 4\*xl { font-size: calc(var(--size\3A 4) * var(--\*xl)); }
+.font-size\3A 5\*xl { font-size: calc(var(--size\3A 5) * var(--\*xl)); }
+.font-size\3A 6\*xl { font-size: calc(var(--size\3A 6) * var(--\*xl)); }
+.font-size\3A 7\*xl { font-size: calc(var(--size\3A 7) * var(--\*xl)); }
+.font-size\3A 8\*xl { font-size: calc(var(--size\3A 8) * var(--\*xl)); }
+
+.\/xs { font-size: calc(1em * var(--\/xs)); }
+.\/sm { font-size: calc(1em * var(--\/sm)); }
+.\/md { font-size: calc(1em * var(--\/md)); }
+.\/lg { font-size: calc(1em * var(--\/lg)); }
+.\/xl { font-size: calc(1em * var(--\/xl)); }
+.\*xs { font-size: calc(1em * var(--\*xs)); }
+.\*sm { font-size: calc(1em * var(--\*sm)); }
+.\*md { font-size: calc(1em * var(--\*md)); }
+.\*lg { font-size: calc(1em * var(--\*lg)); }
+.\*xl { font-size: calc(1em * var(--\*xl)); }
