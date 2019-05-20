@@ -5,7 +5,7 @@ JAVASCRIPT TYPES
 3. Boolean
 4. Undefined
 5. Null
-<!== 6. Symbol (new in ECMAScript 6) -->
+6. Symbol (new in ECMAScript 6)
 7. Object
 
 JAVASCRIPT COMPARISONS
@@ -44,7 +44,7 @@ JAVASCRIPT FUNCTIONS
 var a = function name() {}
 function name() {}
 return
-<!-- () => (new in ECMAScript 6) -->
+() => (new in ECMAScript 6)
 
 JAVASCRIPT DATA STRUCTURES
 ---------------------------
