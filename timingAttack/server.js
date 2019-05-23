@@ -19,7 +19,12 @@ async function checkPassword(input) {
 	let time = 0;
 	result = true;
 
-	input = input.pin.split("");
+	input = input.pin.split('');
+
+	//parse the input as an integer
+	input = Object.keys(input).map((num) => {
+		return parseInt(input[num], 10);
+	});
 
 	//check each number in the input against the correct pin
 	// and increment the time variable 
