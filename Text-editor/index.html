@@ -12,10 +12,15 @@
 
 <body>
 	<div id="dirContent">
-		<div class="file">
-			<div class="icon"></div>
-			<p class="title">new project folder</p>
+		<div class="controlMenu">
+			<div class="new" id="fileIcon">f</div>
+			<div class="new" id="folderIcon">d</div>
 		</div>
+
+		<form id="nameInput">
+			<input type="text" id="fieldName">
+			<input type="submit" value="" hidden>
+		</form>
 	</div>
 
 	<div id="editorContainer"></div>
