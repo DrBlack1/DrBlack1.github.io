@@ -1,0 +1,113 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  font-style: normal;
+  margin: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../higherOrLowerBrowser/img/Las-Vegas-background.jpg);
+}
+
+.banner {
+  padding: 20px 20px 0px 20px;
+}
+
+button {
+  width: 15vw;
+  height: 10vh;
+  margin: 10px 0px;
+  font-size: 1rem;
+  text-align: center;
+  background: #777777;
+}
+
+button:hover {
+  background: #999999;
+}
+
+#buttonBoxes {
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 2vw;
+}
+
+#cardDisplay {
+  display: inline-flex;
+  width: 80%;
+  padding: 5vh 2vw;
+}
+
+.cardHolder {
+  width: 12vw;
+  height: 35vh;
+  margin: auto;
+  border-color: black;
+  border: solid;
+}
+
+img {
+  width: 12vw;
+  height: 35vh;
+  /* animation: zoomUp 2s; */
+  /* animation: zoomDown 2s; */
+}
+
+#logo {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  animation: infinite wobble 4s;
+}
+
+#mainContainer {
+  height: 40vh;
+  margin: 10px;
+  display: flex;
+}
+
+#resultsBar {
+  margin: auto;
+  height: 8rem;
+  width: 70vw;
+  border-color: black;
+  border: solid;
+  background-color: antiquewhite;
+}
+
+.zoom {
+  animation: zoomUp 2s;
+}
+
+.text {
+  font-size: 30px;
+  text-align: center;
+  color: goldenrod;
+  padding: 40px;
+}
+
+@keyframes wobble {
+  0% {
+    top: -20px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: -20px;
+  }
+}
+
+@keyframes zoomUp {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
