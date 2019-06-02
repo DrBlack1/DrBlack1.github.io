@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    
+    <title>How British are you, really?</title>
+    <link rel="stylesheet" href="CSS/websitechallenge.css">
+    
+  </head>
+
+  <body>
+    <div id="wholepage">
+      <img src="Images/queenwaving.gif" alt="The Queen is waving" id="logo">
+   
+     
+        <h1>How British are you?</h1>
+        
+
+        <div class="firstQuestion">
+          <label for="question" id="questions"><strong>1.</strong> What type of gravy would you like on your chips?</label>
+          <input type="text" name="question" id="question">
+          </div>
+        <hr>
+
+        <div class="secondQuestion">
+          <label for="royalFamily" id="questions"><strong>2.</strong> How strongly do you feel about the Royal Family?</label>
+          <br>
+          <br>
+          <span>Who?</span>
+          <input type="range" name="strength" id="strength" value="3" min="1" max="5">
+          <span>I can't wait for Meghan to give birth!</span>
+        </div>
+        <hr>
+        
+        <div class="thirdQuestion">
+          <label for="amount" id="questions"><strong>3.</strong> How many times was Sara Ferguson married?</label>
+          <input type="number" name="amount" id="amount">
+        </div>
+        <hr>
+        
+        
+        <div class="fourthQuestion">
+          <span id="questions"><strong>4.</strong> Where did William and Kate get married?</span>
+          <br>
+          <br>
+          <input type="checkbox" name="places" id="westminster" value="westminster">
+          <label for="westminster">Westminster Abbey</label>
+          <input type="checkbox" name="places" id="ascot" value="ascot">
+          <label for="ascot">Ascot</label>
+          <input type="checkbox" name="places" id="windsor" value="windsor">
+          <label for="winsdor">Windsor Castle</label>
+        </div>
+        <hr>
+        
+        <div class="fifthQuestion">
+          <span id="questions"><strong>5.</strong> Did you support the English football team in 2018?</span>
+          <br>
+          <br>
+          <input type="radio" name="football" id="yes" value="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="football" id="no" value="yes">
+          <label for="no">No</label>
+        </div>
+        <br>
+        <hr>
+       
+        
+        <div class="sixthQuestion">
+          <label for="curry" id="questions"><strong>6.</strong> What type of curry do you prefer?</label>
+          <input list="curries" id="curry" name="curry">
+          <datalist id="curries">
+            <option value="Chicken Green Curry"></option>
+            <option value="Fish Red Curry"></option>
+            <option value="Veggie"></option>
+          </datalist>
+        </div>
+        <hr>
+
+
+        <div class="seventhQuestion">
+          <label for="commentBox" id="questions"><strong>7.</strong>Comment freely on Theresa May.</label>
+          <br>
+          <textarea id="commentBox" name="commentBox" rows="4" cols="30"></textarea>
+        </div>
+        <hr>
+
+
+        <div class="eigthhQuestion">
+          <label for="city" id="questions"> <strong>8.</strong> What is the capital of Wales?</label>
+          <select name="city" id="city">
+            <option value="cardiff">Cardiff</option>
+            <option value="swansea">Swansea</option>
+            <option value="llandudno">Llandudno</option>
+          </select>
+        </div>
+        <hr>
+
+        <div class="submission">
+           <button id="myButton" onclick="myFunction()">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+    <script src="Javascript/websitechallenge.js"></script>
+  </body>
+</html>
