@@ -1,0 +1,362 @@
+body {
+    margin: 0px;
+    font-family: Helvetica;
+    background-color: #ebebe6;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #6d8800;
+}
+
+.navbar {
+    color: #a3bc40;
+    text-decoration: black;
+    padding: 0;
+    /* overflow: visible; */
+    height: 55px;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.navStyle {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+}
+
+.logo {
+    height: 30px;
+}
+
+.navItem {
+    width: auto;
+}
+
+.navItem a {
+    margin: 10px;
+    width: auto;
+    text-decoration: none;
+    color: #a3bc40;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.navItem a:hover {
+    color: white
+}
+
+.dropbtn {
+    background-color: #7b9a00;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 19px 15px 18px;
+    text-decoration: none;
+}
+
+.dropbtn a {
+    background-color: #7b9a00;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.dropbtn:hover, .dropbtn a:hover{
+    color: white;
+    background-color: #586e00;
+}
+
+.rightNav p{
+    margin: 0px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.rightNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.login {
+    display: flex;
+    background-color: #89ac00;
+    border-radius: 5px;
+    color: #fff;
+    height: 38px;
+    width: 170px;
+    padding: 0px;
+    margin: 10px;
+}
+
+.login:hover {
+    background-color: #9bbd3b
+}
+
+.submit:hover {
+    background-color: #b13522
+}
+
+input {
+    border-radius: 5px;
+    height: 36px;
+    width: 315px;
+    font-size: 15px;
+}
+
+input:focus{
+    border-color: #a61c00;
+    box-shadow: 2 2px 2px #a61c00, inset, 2 2 2px #a61c00;
+    outline: 3px #a61c00;;
+}
+
+.icon {
+    height: 20px;
+    width: 20px;
+    margin: 10px;
+}
+
+.logTxt {
+    font-size: 15px;
+    
+}
+
+.submit {
+    background-color: #a61c00;
+    color: #fff;
+    width: 100px;
+    height: 38px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.submitTxt {
+    display: inherit;
+}
+
+.subNav {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: -1px 1px 6px 0px rgba(0,0,0,0.22);
+    justify-content: center;
+    
+}
+
+.subNavStyle {
+    display: flex;
+    flex-direction: row;
+}
+
+.subNavBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.subNavLeft {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    width: 370px;
+    justify-content: flex-start;
+    
+}
+
+.subNavLeft a{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    text-decoration: none;
+    color: #63686d;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.subNavLeft a:hover {
+    color: #a61c00;
+}
+
+.subNavRight {
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 8px;
+}
+
+.filter {
+    display: flex;
+    width: 95x;
+    height: 36px;
+    border: 1px solid grey;
+    background-color: #fff;
+    border-radius: 5px;
+    align-content: center;
+    margin: 5px
+}
+
+.filterIcon {
+    height: 20px;
+    width: 20px;
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.filter:hover {
+    border: 2px solid #a61c00;
+}
+
+.filterText p {
+    font-weight: bold;
+    color: #a61c00;
+    margin: 9px;
+    font-size: 14px;
+}
+
+.margin {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mainBody {
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+    width: 1200px;
+    height: 100%;
+    margin: 10px 5px 10px;
+}
+
+.cardColumn {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    float: left;
+    height: 100%;
+    width: 80%;
+}
+
+.rightCol {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    height: 100%;
+    width: 20%;
+}
+
+.card {
+    margin: 0px 5px 10px;
+    display: flex;
+    background-color: white;
+    width: 950px;
+    height: 230px;
+    border-radius: 5px;
+    flex-shrink: 0
+}
+
+.card1 {
+    margin: 0px 5px 10px;
+    display: flex;
+    background-color: white;
+    width: 950px;
+    height: 230px;
+    border-radius: 5px;
+    flex-shrink: 0
+}
+
+.card2 {
+    margin: 0px 5px 10px;
+    display: flex;
+    background-color: white;
+    width: 950px;
+    height: 230px;
+    border-radius: 5px;
+    flex-shrink: 0
+}
+
+.card3 {
+    margin: 0px 5px 10px;
+    display: flex;
+    background-color: white;
+    width: 950px;
+    height: 230px;
+    border-radius: 5px;
+    flex-shrink: 0
+}
+
+.card4 {
+    margin: 0px 5px 10px;
+    display: flex;
+    background-color: white;
+    width: 950px;
+    height: 230px;
+    border-radius: 5px;
+    flex-shrink: 0
+}
+
+.rightContent {
+    margin: 0px 5px 10px;
+    display: flex;
+    background-color: white;
+    height: 500px;
+    width: 230px;
+    border-radius: 5px;
+    padding: 5px;
+    flex-shrink: 0
+}
+
+.rightContent1 {
+    margin: 0px 5px 10px;
+    display: flex;
+    background-color: white;
+    height: 500px;
+    width: 230px;
+    border-radius: 5px;
+    padding: 5px;
+    flex-shrink: 0
+}
+
+.rightContent2 {
+    margin: 0px 5px 10px;
+    display: flex;
+    background-color: white;
+    height: 500px;
+    width: 230px;
+    border-radius: 5px;
+    padding: 5px;
+    flex-shrink: 0
+}
+
+.cardContents {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 200px 720px;
+    grid-template-rows: 25% 25% 25% 25%;
+
+}
+
+.rightImg {
+    margin: 0px;
+}
