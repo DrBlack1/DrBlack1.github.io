@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+#main {
+    text-align: center;
+}
+
+section {
+    height: 100vh;
+    background-size: cover;
+    opacity: 0;
+	transform: translate(0, 20px);
+	transition: opacity 2s;
+}
+
+section.visible {
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+/* TOP PAGE */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#title {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 3rem;
+}
+
+#quote {
+    font-size: 2rem;
+}
+
+#header-image {
+    background-image: url("./img/stevejobs-header.jpg");
+    object-fit: cover;
+}
+
+
+
+/* image */
+#highlight {
+    padding-bottom: 20px;
+}
+
+hr {
+    width: 20%;
+    border: none;
+    border-top: 5px solid black;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+}
+#img-div {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#image {
+    display: block;
+    width: 50%;
+    max-width: 2000px;
+    min-width: 300px;
+    margin: 0 auto;
+}
+
+/* Tribute Info */
+
+#tribute-info {
+    background-color: #050505;
+    color: #fff;
+}
+
+#tribute-link {
+    font-family: 'La Belle Aurore', cursive;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#tribute-link:hover, #tribute-link:active {
+    opacity: 0.8;
+}
+
+#quote {
+    font-size: 2rem;
+}
+
+
+/* KEYFRAME ANIMATION */
+@keyframes fadeIn {
+    0% {
+      opacity:  0;
+      transform:  translateY(20px);
+    }
+    50% {
+      transform:  translate(0);   
+    }
+    100% {
+      opacity: 1;
+    }
+  }  
+
+.appear {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration:  2s;
+    animation-fill-mode: forwards;
+  }
+
+@media screen and (max-width: 750px) {
+    
+    #header-image {
+        background-image: url("./img/steve-on-stage.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% top;
+        filter: grayscale(100%)
+    }
+}
+
+
