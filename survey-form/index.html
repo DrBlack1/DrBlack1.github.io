@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <section id="header">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Tell us how you started coding!</p>
+    </section>
+
+    <form action="" method="GET" id="survey-form">
+        <div class="form-row">
+            <label class="input-label" id="name-label" for="name"><i class="star fas fa-asterisk fa-xs"></i> Name:</label>
+            <input class="form-input" type="text" id="name" name="name" value="" placeholder="Enter your name" required/>
+        </div>
+        
+        <div class="form-row">
+            <label class="input-label" id="email-label" for="email"><i class="star fas fa-asterisk fa-xs"></i> Email:</label>
+            <input class="form-input"type="email" id="email" name="email" value="" placeholder="Enter your email" required/>
+        </div>
+        
+        <div class="form-row">
+            <label class="input-label" id="number-label" for="number"><i class="star fas fa-asterisk fa-xs"></i> Age:</label>
+            <input class="form-input" type="number" id="number" name="number" value="" min="12" max="100" placeholder="Age" required/>          
+        </div>
+
+
+        <div class="form-row">
+            <label class="input-label" for="dropdown">How long have you been coding?</label>
+            <select name="coding length" id="dropdown">
+                <option value="total newbie">Just starting out</option>
+                <option value="not so newbie">A few months</option>
+                <option value="boss level">1-2 years</option>
+                <option value="master level">3+ years</option>
+            </select>
+        </div>
+       
+        <div class="form-row">
+            <legend class="input-label">How likely would you recommend learning to code to other people?</legend>
+            <div class="radio-input">
+                <div>
+                    <input type="radio" id="definitely" name="recommendToCode" value="definitely" checked/>
+                    <label for="definitely">Definitely</label>
+                </div>
+                
+                <div>
+                    <input type="radio" id="maybe" name="recommendToCode" value="maybe">
+                    <label for="maybe">Maybe</label>
+                </div>
+
+                <div>
+                    <input type="radio" id="not-sure" name="recommendToCode" value="not-sure">
+                    <label for="not-sure">Not Sure</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label class="input-label" for="learning-platform">Which of these learning platforms you use to learn how to code?</label>
+            <div>
+                <div>
+                    <input type="checkbox" name="freecodecamp" id="freecodecamp" value="freecodecamp">
+                    <label for="freecodecamp">FreeCodeCamp</label>
+                </div>
+    
+                <div>
+                    <input type="checkbox" name="codecademy" id="codecademy" value="codecademy">
+                    <label for="codecademy">Codecademy</label>
+                </div>
+    
+                <div>
+                    <input type="checkbox" name="udemy" id="udemy" value="udemy">
+                    <label for="udemy">Udemy</label>
+                </div>    
+            </div>
+            
+        </div>
+
+        <div class="form-row">
+            <label class="input-label" for="journey-story"><i class="star fas fa-asterisk fa-xs"></i> Share your journey to coding with us here:</label>
+            <textarea name="journey-story" id="journey-story" placeholder="Tell us your story here" required></textarea>
+        </div>
+
+        <div class="form-row submit-div">
+            <button id="submit">Submit</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>fields with <i class="star fas fa-asterisk fa-xs"></i> are required</p>
+        <p>any data submitted aren't being processed at all</p>
+        <hr>
+        <p>made with ♥ by cristien.</p>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
