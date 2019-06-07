@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Signika");
+
+#Menu {
+  padding: 5px;
+}
+
+body {
+  font-family: "Signika", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: grey;
+  border-radius: 10pt;
+  font-family: "Signika", sans-serif;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 10pt;
+  font-family: "Signika", sans-serif;
+}
+
+#boardtitle {
+  color: white;
+}
+
+#title {
+  font-size: 13pt;
+  position: relative;
+  left: 30px;
+}
+
+#searchBox {
+  position: relative;
+  top: 12px;
+}
+
+#findBoard {
+  position: relative;
+  top: 11px;
+  font-family: "Signika", sans-serif;
+  font-size: 13px;
+}
+
+#deleteBox {
+  position: relative;
+  top: 12px;
+  left: 5px;
+}
+
+#deleteBoard {
+  position: relative;
+  top: 11px;
+  font-family: "Signika", sans-serif;
+  font-size: 13px;
+  left: 5px;
+}
+
+#renameBox {
+  display: none;
+}
+
+#renameBoard {
+  display: none;
+}
+
+#newBoard:hover {
+  cursor: pointer;
+}
+li a:hover {
+  background-color: #ff5656;
+}
