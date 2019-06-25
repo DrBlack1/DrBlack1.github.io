@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    /* background-color: lightgray; */
+    background-image: url('https://www.wallpaperu3.com/wp-content/mywallpapers/rainy-weather-wallpaper-1280x720.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Nunito', sans-serif;
+    /* height: 100vh; */
+
+}
+
+.head {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.inputBox{
+    position: absolute;
+    top: 20%;
+}
+
